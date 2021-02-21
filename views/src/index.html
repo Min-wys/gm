@@ -1,0 +1,452 @@
+<%- include('../common/header.html'); %>
+<link href="../gm-css/index.css" rel="stylesheet">
+<style>
+    a{text-decoration: none;}
+    a:hover{text-decoration: none;}
+    .swiper_content{width:1300px;margin:0 auto;position: relative;}
+    .swiper-container {
+        width: 1076px;
+        /* height: 565px; */
+        padding: 30px;
+        background-color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .swiper-slide:first-child {}
+
+    .swiper-wrapper {
+        /* height: 505px; */
+    }
+
+    .swiper-slide {
+        border: 1px solid #f1f1f1;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        padding-bottom:30px;
+        cursor: pointer;
+    }
+    .swiper-button-next,.swiper-button-prev, .swiper-button-next img,.swiper-button-prev img{
+       border:none important;
+    }
+    .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
+       content:'';
+    }
+    .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+        content:'';
+    }
+</style>
+
+<body>
+    <!-- 导航 -->
+    <%- include('../common/nav.html'); %>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+
+                <div class="container container-gm">
+                    <div class="col-md-7 wow fadeInLeft" style="padding-left: 60px;">
+                        <h4 class="featurette-heading">观麦科技—生鲜老板的选择</h4>
+                        <p class="lead" style="font-size: 17px; margin: 22px 0px 35px 0px;">降耗损、省人力、提时效、增毛利、为生鲜配送老板<br />每年提升20%利润</p>
+                        <a class="btn btn-default btn-default1" href="#" role="button">免费试用 &raquo;</a>
+                    </div>
+                    <div class="col-md-5 flex-row-center wow fadeInRight">
+                        <img class="featurette-image  " src="../gm-images/index/banner.gif">
+                        <!-- <img class="featurette-image  " src="../gm-images/index/banner-anite.gif"> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!--       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+
+        <div class="container">
+            <div class="banner-bottm">
+                <div class="b-item">
+                    <img src="../gm-images/index/b-bottom-1.png">
+                    <div class="right-text">
+                        <p class="rigit-title">做食材配送，用观麦系统</p>
+                        <p class="right-tips">助力商家成功<br />全渠道全场景的SAAS产品</p>
+
+                    </div>
+                </div>
+
+                <div class="b-item">
+                    <img src="../gm-images/index/b-bottom-2.png">
+                    <div class="right-text">
+                        <p class="rigit-title">做中央厨房，用观麦系统</p>
+                        <p class="right-tips">打造共赢的观麦生态<br />为商家提供全方位一站式服务</p>
+
+                    </div>
+                </div>
+
+                <div class="b-item">
+                    <img src="../gm-images/index/b-bottom-3.png">
+                    <div class="right-text">
+                        <p class="rigit-title">做食材配送，用观麦系统</p>
+                        <p class="right-tips">让商家经营有保障<br />五年技术沉淀，系统稳定高于一切</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" style="padding-top:140px">
+
+        <div class="markint-title wow fadeInUp">
+            <h4 class="featurette-heading">观麦科技—生鲜老板的选择</h4>
+            <p class="lead">降耗损、省人力、提时效、增毛利、为生鲜配送老板每年提升20%利润</p>
+        </div>
+
+
+        <!-- START THE FEATURETTES -->
+        <div class="row featurette">
+            <div class="f-warp wow fadeInLeft " data-wow-delay="1s">
+                <div class="right-text">
+                    <p class="rigit-title">重新定义实体生鲜</p>
+                    <p class="right-tips">打破传统生鲜配送企业运作模式，升级优化配送全流程， 实现企业降本增效</p>
+                </div>
+                <div class="right-text">
+                    <p class="rigit-title">生鲜企业共同选择</p>
+                    <p class="right-tips">面向客户成功的服务体系不只是软件，更自然的方式改进效率，打造闭环</p>
+                </div>
+                <div class="btn-area">
+                    <a class="btn btn-default btn-blue" href="#" role="button">免费试用 &raquo;</a>
+                    <a class="btn btn-default btn-white" href="#" role="button">了解更多 &raquo;</a>
+                </div>
+            </div>
+            <div class="f-warp flex-right wow fadeInRight" data-wow-delay="1s">
+                <img class="featurette-image-w img-responsive" src="../gm-images/index/computer.png"
+                    alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="f-warp flex-left wow fadeInLeft" style="width: 60%;" data-wow-delay="1s">
+                <img class="featurette-image-w img-responsive" src="../gm-images/index/car.png" style="width: 500px;">
+            </div>
+            <div class="f-warp wow fadeInRight" data-wow-delay="1s">
+                <div class="right-text">
+                    <p class="rigit-title">生鲜配送SAAS系统</p>
+                    <p class="right-tips">打破传统生鲜配送企业运作模式，升级优化配送全流程，实现企业降本增效正在为全国几千家配送企业提供系统
+                        服务，行业认可，口碑相传</p>
+                </div>
+                <div class="right-text">
+                    <p class="rigit-title">降本增效</p>
+                    <p class="right-tips">专为生鲜配送经营场景设计灵活支持多业态多场景，全、面解决生鲜配送经营需要</p>
+                </div>
+                <div class="btn-area">
+                    <a class="btn btn-default btn-blue" href="#" role="button">免费试用 &raquo;</a>
+                    <a class="btn btn-default btn-white" href="#" role="button">了解更多 &raquo;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row featurette">
+            <div class="f-warp wow fadeInLeft" data-wow-delay="1s">
+                <div class="right-text">
+                    <p class="rigit-title">中央厨房SAAS系统</p>
+                    <p class="right-tips">改变无计划，不规范的生产方式，全力打造中央厨房新业态经济市场风向标全方位解决净菜/肉类加工、食堂配送、团餐加工、餐饮配送等问题</p>
+                </div>
+                <div class="right-text">
+                    <p class="rigit-title">开源节流</p>
+                    <p class="right-tips">规划“净菜上市”城市蓝图观麦中央厨房系统助力企业降低50%的运营成本，让您的加工配送更高效</p>
+                </div>
+                <div class="btn-area">
+                    <a class="btn btn-default btn-blue" href="#" role="button">免费试用 &raquo;</a>
+                    <a class="btn btn-default btn-white" href="#" role="button">了解更多 &raquo;</a>
+                </div>
+            </div>
+            <div class="f-warp flex-right wow fadeInRight" style="width: 60%;" data-wow-delay="1s">
+                <img class="featurette-image-w img-responsive" src="../gm-images/index/table.png" style="width: 530px;">
+            </div>
+        </div>
+
+        <div class="row featurette">
+            <div class="f-warp flex-left wow fadeInLeft" data-wow-delay="1s">
+                <img class="featurette-image-w img-responsive" src="../gm-images/index/shop.png"
+                    alt="Generic placeholder image">
+            </div>
+            <div class="f-warp wow fadeInRight" data-wow-delay="1s">
+                <div class="right-text">
+                    <p class="rigit-title">新零售SAAS系统</p>
+                    <p class="right-tips">线上全渠道开店，海量曝光，近百种营销玩法，提升成交，全方位数据剖析，驱动决策调整给你基于销售和消费大数据的在线营销平台，拉新、转化、促活等面面俱到</p>
+                </div>
+                <div class="right-text">
+                    <p class="rigit-title">事半功倍</p>
+                    <p class="right-tips">贯穿整个生意环节最懂你的生意伙伴，帮助零售商家门店网店双倍增长</p>
+                </div>
+                <div class="btn-area">
+                    <a class="btn btn-default btn-blue" href="#" role="button">免费试用 &raquo;</a>
+                    <a class="btn btn-default btn-white" href="#" role="button">了解更多 &raquo;</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <hr class="featurette-divider">
+
+        <!-- 观麦应用场景 -->
+        <div class="markint-title wow fadeInUp">
+            <h4 class="featurette-heading">观麦应用场景</h4>
+            <p class="lead">生鲜行业解决方案，专属应用，专业赋能</p>
+        </div>
+
+        <div class="gm-screen">
+
+            <div class="gm-s-item border-right border-bottom">
+                <img src="../gm-images/index/screen-icon1.png" class="screen-icon wow fadeInLeft">
+                <div class="right-text wow fadeInLeft">
+                    <p class="rigit-title">订单管理</p>
+                    <p class="right-tips">持续进化提升安全能力</p>
+                </div>
+            </div>
+
+            <div class="gm-s-item border-right border-bottom">
+                <img src="../gm-images/index/screen-icon2.png" class="screen-icon wow fadeInDown">
+                <div class="right-text wow fadeInDown ">
+                    <p class="rigit-title">采购管理</p>
+                    <p class="right-tips">持续进化提升安全能力</p>
+                </div>
+            </div>
+
+            <div class="gm-s-item border-right border-bottom">
+                <img src="../gm-images/index/screen-icon3.png" class="screen-icon wow fadeInDown">
+                <div class="right-text wow fadeInDown">
+                    <p class="rigit-title">分拣管理</p>
+                    <p class="right-tips">持续进化提升安全能力</p>
+                </div>
+            </div>
+
+            <div class="gm-s-item border-right">
+                <img src="../gm-images/index/screen-icon4.png" class="screen-icon wow fadeInRight">
+                <div class="right-text wow fadeInRight">
+                    <p class="rigit-title">加工管理</p>
+                    <p class="right-tips">持续进化提升安全能力</p>
+                </div>
+            </div>
+
+            <div class="gm-s-item border-right">
+                <img src="../gm-images/index/screen-icon5.png" class="screen-icon wow fadeInLeft">
+                <div class="right-text wow fadeInLeft">
+                    <p class="rigit-title">配送管理</p>
+                    <p class="right-tips">持续进化提升安全能力</p>
+                </div>
+            </div>
+
+            <div class="gm-s-item border-right">
+                <img src="../gm-images/index/screen-icon6.png" class="screen-icon wow fadeInUp">
+                <div class="right-text wow fadeInUp">
+                    <p class="rigit-title">仓储管理</p>
+                    <p class="right-tips">持续进化提升安全能力</p>
+                </div>
+            </div>
+
+            <div class="gm-s-item">
+                <img src="../gm-images/index/screen-icon7.png" class="screen-icon wow fadeInUp">
+                <div class="right-text wow fadeInUp">
+                    <p class="rigit-title">对账管理</p>
+                    <p class="right-tips">持续进化提升安全能力</p>
+                </div>
+            </div>
+
+
+            <div class="gm-s-item ">
+                <img src="../gm-images/index/screen-icon8.png" class="screen-icon wow fadeInRight">
+                <div class="right-text wow fadeInRight">
+                    <p class="rigit-title">数据分析</p>
+                    <p class="right-tips">持续进化提升安全能力</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <hr class="featurette-divider"> -->
+    <!-- 轮播-观麦CEO专访 -->
+    <div id="myCarousel2" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner " role="listbox" style="  background-color: rgba(245, 247, 253, 1) !important;">
+            <div class="markint-title">
+                <h4 class="featurette-heading" style="margin-top:90px;">生鲜CEO专访</h4>
+                <p class="lead">全面解读生鲜巨头、深度剖析资本运作、高度分享CEO智慧</p>
+            </div>
+
+            <div class="swiper_content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <% ceo.forEach(function(item){%>
+                        <% if(item.link){%>
+                            <a class="swiper-slide " href="<%=item.link %>">
+                        <% }else {%>
+                            <a class="swiper-slide " href="/case_detail/<%=item.id %>">
+                        <% }%>
+                            <div class="img-clip" style="width:100%;height:215px;overflow: hidden;">
+                                <img class="cars-img-avatar" src="<%=item.image%>">
+                            </div>
+                            <div class="car-desc"><%=item.title%></div>
+                            <img class="cars-img-logo" src="./gm-images/index/cars-img-logo.png">
+                        </a>
+                    <% }) %>
+                    </div>
+                    <!-- Add Pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                </div>
+                <div class="swiper-button-next"><img src="./gm-images/index/right.png" alt=""></div>
+                <div class="swiper-button-prev"><img src="./gm-images/index/left.png" alt=""></div>
+            </div>
+        </div>
+
+    </div><!-- /.carousel -->
+
+    <div class="container" style="padding-top: 0px;margin-top:240px;">
+        <!-- 观麦系统优势介绍 -->
+        <div class="markint-title">
+            <h4 class="featurette-heading">观麦系统优势介绍</h4>
+            <p class="lead">打造生鲜行业全场景一体化解决方案，做企业的升级管理</p>
+            <img src="../gm-images/index/bigimg1.png">
+        </div>
+
+        <!-- 他们都在用观麦 -->
+        <div class="markint-title">
+            <h4 class="featurette-heading">他们都在用观麦</h4>
+            <p class="lead">观麦为企业赋能，提升生鲜业态，共享未来，我们一直在努力</p>
+        </div>
+        <div class="gm3-screen">
+            <% case2.forEach(function(item2){%>
+            <% if(item2.link){%>
+                <a class="gms3-item" href="<%=item2.link %>">
+            <% }else {%>
+                <a class="gms3-item" href="/case_detail/<%=item2.id %>">
+            <% }%>
+                <img class="cars-img-avatar" src="<%=item2.image %>">
+                <img class="cars-img-logo" src="./gm-images/index/cars-img-logo.png">
+                <div class="car-desc"><%=item2.title %></div>
+            </a>
+            <% }) %>
+        </div>
+    </div>
+
+    <div class="bg-good">
+        <img src="../gm-images/index/bg-good.png" class="bg-good-img">
+        <div class="markint-title wow fadeInUp bg-good-content">
+            <h4 class="featurette-heading" style="margin-bottom: 40px;">他们都在用观麦</h4>
+            <a class="btn btn-default btn-blue btn-big btn-tank" href="#" role="button">免费试用 &raquo;</a>
+        </div>
+
+    </div>
+
+
+    <div class="container" style="margin-bottom: 80px;">
+        <div class="gm4-screen">
+            <div class="gm4-left">
+                <div class="gms4-item">
+                    <div class="gms4-num wow shake"><span class="shake_total">0</span>+</div>
+                    <div class="gms4-desc">客户信赖之选</div>
+                </div>
+                <div class="gms4-item">
+                    <div class="gms4-num wow swing"><span class="swing_total">0</span>+</div>
+                    <div class="gms4-desc">覆盖城市</div>
+                </div>
+                <div class="gms4-item">
+                    <div class="gms4-num wow wobble">100% </div>
+                    <div class="gms4-desc">效率提升</div>
+                </div>
+
+            </div>
+            <div class="gm4-right">
+                <h1>观麦服务标准</h1>
+                <a class="btn btn-default btn-blue btn-big btn-tank" href="#" role="button">免费试用 &raquo;</a>
+                <div class="gm4-tags">多仓管理 / 分公司管理 / 阿米巴模式推荐 / 下属单位权限管理</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('.wow').attr({
+            "data-wow-duration": '1000ms',
+            'data-wow-delay': '1s',
+            'data-wow-offset': 0,
+            // 'data-wow-iteration':'infinite'
+        })
+
+        wow=new WOW(
+            {
+                animateClass: 'animated',
+                offset: 1000,
+                callback: function(box) {
+                    console.log("WOW: animating <"+box.tagName.toLowerCase()+">")
+                }
+            }
+        );
+        wow.init();
+        $(function() {
+            var swiper=new Swiper('.swiper-container',{
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            var obj={
+                el: $(".shake_total"),
+                max: 5200,
+                start: 0,//增加开始的初始值
+                timer: 0.1,
+                offset: 20,
+            };
+            var obj2={
+                el: $(".swing_total"),
+                max: 500,
+                start: 0,//增加开始的初始值
+                timer: 5,
+                offset: 20,
+            }
+            up(obj); up(obj2);
+        })
+        function up(obj) {
+            var item=obj.el;
+            var num=obj.max;
+            var start=obj.start;
+            var timer=obj.timer;
+            var offset=obj.offset;
+            var time2=setInterval(function() {
+                start=start+offset;
+                if(start>num) {
+                    start=num;
+                    clearInterval(time2);
+                }
+                item.text(start)
+            },timer)
+        }
+    </script>
+
+    <%- include('../common/footer.html'); %>

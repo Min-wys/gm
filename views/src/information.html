@@ -1,0 +1,86 @@
+<%- include('../common/header.html'); %>
+<link href="../gm-css/common.css" rel="stylesheet">
+<link href="../gm-css/information.css" rel="stylesheet">
+<body style="background-color:#fff;">
+
+    <!-- 导航 -->
+    <%- include('../common/nav.html'); %>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!--       <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      
+      </ol> -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="container container-gm">
+                    <div class="col-md-10 col-md-offset-2">
+                        <img class="featurette-image  " src="../gm-images/information/header.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container information">
+        <div class="row">
+            <div class="col-md-2" role="complementary">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                    <ul class="nav bs-docs-sidenav menulist" >
+                        <li class='<% if (gm_active == "information") { %> active <% } %>'>
+                            <a href="/information">观麦新闻</a>
+                        </li>
+                        <li class='<% if (gm_active == "activities") { %> active <% } %>'>
+                            <a href="/activities">回顾活动</a>
+                        </li>
+                        <li class='<% if (gm_active == "newfunction") { %> active <% } %>'>
+                            <a href="/newfunction">新功能</a>
+                        </li>
+                        <li class='<% if (gm_active == "fresh") { %> active <% } %>'>
+                            <a href="/fresh">生鲜课堂</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-10" role="main" id="information_content">
+                <ul class="breadcrumb">
+                    <li><a class="active">观麦新闻</a></li>
+                </ul>
+                <div class="row">
+                    <% listData.forEach(function(item){%>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="/information_detail/<%=item.id %>">
+                            <div class="thumbnail">
+                                <div class="information_img_clip">
+                                    <img src="<%=item.image %>" alt="..." class="list_img">
+                                </div>
+                                <div class="caption">
+                                    <h3><%=item.title %></h3>
+                                    <p class="timer">发表时间: <%=item.create_time %></p>
+                                    <p class="content"><%=item.desc %></p>
+                                    <p>
+                                        <a href="/information_detail/<%=item.id %>" class="clkurl" ><img src="../gm-images/information/riight-jt.png" alt=""></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <% }) %>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.container -->
+<script>
+    
+</script>
+    <%- include('../common/footer.html'); %>
+   

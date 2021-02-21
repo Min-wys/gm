@@ -1,0 +1,225 @@
+<%- include('../common/header.html'); %>
+<link href="../gm-css/information.css" rel="stylesheet">
+<link href="../gm-css/information.css" rel="stylesheet">
+<link href="../gm-css/timeline.min.css" rel="stylesheet">
+<link href="../gm-css/quill.snow.css" rel="stylesheet">
+<body>
+
+    <!-- 导航 -->
+    <%- include('../common/nav.html'); %>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!--       <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      
+      </ol> -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+
+                <div class="container container-gm">
+                    <div class="col-md-10 col-md-offset-2">
+                        <img class="featurette-image  " src="../gm-images/information/header.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container information" >
+        <% if (detail) { %>
+        <div class="row">
+            <div class="col-md-2" role="complementary">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                    <ul class="nav bs-docs-sidenav menulist">
+                        <li class='<% if (detail && detail.cateid == 1) { %> active <% } %>'>
+                            <a href="/information">观麦新闻</a>
+                        </li>
+                        <li class='<% if (detail && detail.cateid == 2) { %> active <% } %>'>
+                            <a href="/activities">回顾活动</a>
+                        </li>
+                        <li class='<% if (detail && detail.cateid == 3) { %> active <% } %>'>
+                            <a href="/newfunction">新功能</a>
+                        </li>
+                        <li class='<% if (detail && detail.cateid == 4) { %> active <% } %>'>
+                            <a href="/fresh">生鲜课堂</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-10 " role="main" id="information_content">
+                <ul class="breadcrumb">
+                    <% if (detail && detail.cateid == 1) { %>
+                    <li><a href="/information">观麦新闻</a></li>
+                    <% } else if(detail && detail.cateid == 2){ %>
+                        <li><a href="/activities">回顾活动</a></li>
+                    <% } else if(detail && detail.cateid == 3){ %>
+                        <li><a href="/newfunction">新功能</a></li>
+                    <% } else if(detail && detail.cateid == 4){ %>
+                        <li><a href="/fresh">生鲜课堂</a></li>
+                   <% }  %>
+                    <li class="active">内容</li>
+                </ul>
+                <div class="row">
+                    <!-- 资讯内容 -->
+                    <div class="detail">
+                        <p class="title"><%=detail.title %></p>
+                        <p class="tips">
+                            <span>发表时间： <%=detail.create_time %></span>
+                            <span>访问量： <%=detail.pv %></span>
+                            <a href="#information">相关资讯</a>
+                            <a href="#comment">查看评论</a>
+                        </p>
+                        <div class="desc">
+                            <span>摘要：</span><%=detail.desc %>
+                        </div>
+                        <div class="cont ql-editor" >
+                            <%- detail.content %>
+                        </div>
+                    </div>
+                    <!-- 提交联系信息 -->
+                    <div class="message">
+                        <p class="message_title">请留下您的联系方式，我们会尽快与您联系</p>
+                        <div class="postUserinfo">
+                            <div class="col-md-4 qr_left">
+                                <img src="../gm-images/information/qrcode.png" alt="">
+                                <p>扫码免费领取《生鲜管理资料》</p>
+                                <p>免费加入生鲜CEO高端交流群</p>
+                            </div>
+                            <div class="col-md-8 user_right">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="form-control " id="name" name="name" placeholder="请输入姓名（必填）" required>
+                                    </div>
+                                    <div class="input-group  col-md-12">
+                                        <input type="text" class="form-control" id="phone" name="phone" placeholder="请输入手机号码（必填）" required>
+                                    </div>
+                                    <div class="input-group  col-md-12">
+                                        <input type="text" class="form-control" id="company" name="company" placeholder="请输入公司名称">
+                                    </div>
+                                    <input type="hidden" >
+                                    <a  class="btn col-md-12 subUserinfo" id="subUserinfo">提交信息</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line "></div>
+                    <!-- 分享 -->
+                    <div class="information_other">
+                        <% if(list.length>0){%>
+                        <p><a href="/information_detail/<%=list[0]['id']%>">下一个：<%=list[0]['title']%></a></p>
+                        <% }%>
+                        <p class="share">
+                            <span>分享</span>
+                            <a href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.guanmai.cn/news/11866908&title=<%=detail.title%>&source=https://www.guanmai.cn/news/11866908&desc=<%=detail.desc%>&pics=<%=detail.image%>&summary=<%=detail.desc%>">
+                                <img src="../gm-images/information/wechat.png" alt="">
+                            </a>
+                            <a
+                                href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.guanmai.cn/news/11866908&title=【八月活动预告】2019-2020年度互联网食材配送百强企业线上颁奖盛典，定了！&source=https://www.guanmai.cn/news/11866908&desc=为了聚集更多的生鲜食配人，帮助传统的生鲜企业实现互联网转型及快速发展，观麦商学院从16年开始在全国举办了超过200场食配培训活动，邀请了全国重量级讲师，累计参加培训人数达35000&pics=https://www.guanmai.cn/yuque/0/2020/jpeg/678979/1603265352566-65c76996-b260-4d3f-b095-288ec10f43d8.jpeg&summary=为了聚集更多的生鲜食配人，帮助传统的生鲜企业实现互联网转型及快速发展，观麦商学院从16年开始在全国举办了超过200场食配培训活动，邀请了全国重量级讲师，累计参加培训人数达35000">
+                                <img src="../gm-images/information/qq.png" alt="">
+                            </a>
+                            <a
+                               href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.guanmai.cn/news/11866908&title=【八月活动预告】2019-2020年度互联网食材配送百强企业线上颁奖盛典，定了！&desc=为了聚集更多的生鲜食配人，帮助传统的生鲜企业实现互联网转型及快速发展，观麦商学院从16年开始在全国举办了超过200场食配培训活动，邀请了全国重量级讲师，累计参加培训人数达35000&summary=为了聚集更多的生鲜食配人，帮助传统的生鲜企业实现互联网转型及快速发展，观麦商学院从16年开始在全国举办了超过200场食配培训活动，邀请了全国重量级讲师，累计参加培训人数达35000&site=https://www.guanmai.cn/news/11866908&pics=https://www.guanmai.cn/yuque/0/2020/jpeg/678979/1603265352566-65c76996-b260-4d3f-b095-288ec10f43d8.jpeg">
+                                <img src="../gm-images/information/qqkj.png" alt="">
+                            </a>
+                            <a
+                                href="http://service.weibo.com/share/share.php?title=【八月活动预告】2019-2020年度互联网食材配送百强企业线上颁奖盛典，定了！&url=https://www.guanmai.cn/news/11866908&pic=https://www.guanmai.cn/yuque/0/2020/jpeg/678979/1603265352566-65c76996-b260-4d3f-b095-288ec10f43d8.jpeg"">
+                                <img src="../gm-images/information/weibo.png" alt="">
+                            </a>
+                        </p>
+                    </div>
+                    <!-- 相关资讯 -->
+                    <% if(list.length>0){%>
+                    <div class="other" id="information">
+                        <p class="banner">相关资讯</p>
+                        <div class="other_list">
+                            <% list.forEach(function(item){%>
+                            <div class="col-md-1-5">
+                                <a href="#" class="thumbnail">
+                                    <img src="/<%=item.image %>" alt="...">
+                                    <p><%=item.title%></p>
+                                </a>
+                            </div>
+                            <% })%>
+                        </div>
+                    </div>
+                    <% }%>
+                    <!-- 评论 -->
+                    <div class="comment" id="comment">
+                        <p class="banner">评论</p>
+                        <div class="comment_cont">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="nickname" class="col-md-1 control-label">昵称</label>
+                                    <div class="col-md-11">
+                                        <input type="text" class="form-control" id="nickname" >
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" rows="4" style="resize:none" id="content"></textarea>
+                                    </div>
+                                </div>
+                                <a  class="col-md-offset-9 btn col-md-3 subUserinfo" id="subcommit" style="float:right;">提交信息</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% }%>
+    </div><!-- /.container -->
+
+    <script>
+        var aid = "<%=detail.id%>";
+        $("#subUserinfo").click(function(){
+            var name= $("#name").val();
+            var phone = $("#phone").val();
+            var company = $("#company").val();
+            console.log(name,phone,company);
+            if(!name || !phone){
+                return false;
+            }
+
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "/postInfo",
+                data: {name:name,phone:phone,company:company},
+                success: function (data) {
+                    alert("留言成功");
+                    $("#name").val('');
+                    $("#phone").val('');
+                    $("#company").val('');
+                }
+            });
+        })
+        $("#subcommit").click(function () {
+                var nickname = $("#nickname").val();
+                var content = $("#content").val();
+                console.log(nickname, content);
+                if (!nickname || !content) {
+                    return false;
+                }
+                $.ajax({
+                    type: "GET",
+                    dataType: "json",
+                    url: "/postCommit",
+                    data: {aid:aid,nickname: nickname, content: content},
+                    success: function (data) {
+                        alert("评论成功");
+                        $("#nickname").val('');
+                        $("#content").val('');
+                    }
+                });
+            })
+    </script>
+    <div style="border-bottom:1px solid #e1e3ee;margin-top:50px;"></div>
+    <%- include('../common/footer.html'); %>

@@ -1,0 +1,124 @@
+<%- include('../common/header.html'); %>
+
+<link href="../gm-css/class-center.css" rel="stylesheet">
+
+<body>
+    <!-- 导航 -->
+    <%- include('../common/nav.html'); %>
+    <div id="contvue">
+        <!--  classCenterBanner -->
+        <section id="classCenterBanner">
+            <div class="container">
+
+                <div class="row footer-top">
+                    <div class="col-md-1 col-lg-1 wow fadeInLeft"></div>
+                    <div class="col-md-5 col-lg-5 wow fadeInLeft">
+                        <h1>观麦课堂</h1>
+                        <div class="banner-text">
+                            <p>打造金牌产品顾问与企业用户交流平台</p>
+                            <p>深度剖析产品，解放创新力，赋能生鲜行业增长专场</p>
+                        </div>
+                        <div><button class="btn btn-primary banner-btn">免费试用 <img
+                                    src="../gm-images/class-center/组16@2x(1).png" alt=""></button></div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 wow fadeInRight" style="padding-top: 50px;">
+                        <img src="../gm-images/class-center/组16@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  classCenterBanner -->
+
+
+        <section class="container">
+            <div id="classesBtn">
+                <a href="class-center-vip"><span class='<% if (gm_menu == "class-center-vip") { %> active <% } %>'>进阶班</span></a>
+                <a href="/class-center"><span class='<% if (gm_menu == "class-center") { %> active <% } %>'>初级班</span></a>
+            </div>
+        </section>
+
+        <!-- classList -->
+        <section id="classList" class="container" style="margin-bottom:60px;">
+            <div class="row">
+                <% list.forEach(function(item,index){%>
+                <a href="<%=item.link %>">
+                    <div class="col-sm-12 col-md-3 col-lg-3 class-item">
+                            <div>
+                                <div>
+                                    <img src="<%=item.image %>" alt="">
+                                </div>
+                                <div><%=item.title %></div>
+                                <div>
+                                    <span><img src="../gm-images/class-center/矢量智能对象@2x(1).png" alt=""> <%=item.pv %></span>
+                                    <span>限时免费</span>
+                                </div>
+                            </div>
+                    </div>
+                </a>
+                <% }) %>
+
+            </div>
+
+            <div style="margin-top: 10px;padding-bottom:84px;">
+                <ul id="page"></ul>
+            </div>
+        </section>
+        <!-- end classList -->
+
+
+        <section id="Ecosphere">
+            <img src="../gm-images/class-center/图层42@2x.png" alt="">
+        </section>
+    </div>
+    <script>
+
+
+        $(function () {
+            var menutype = "<%=gm_menu %>";
+            var currentPage = "<%=page %>";
+            var total = "<%=total[0].total %>";
+            var limit = "<%=limit %>";
+            var totalPages = Math.ceil(total/ limit);
+            if(totalPages<=1){
+                return false;
+            }
+            $("#page").bootstrapPaginator({
+                bootstrapMajorVersion: 3, //对应的bootstrap版本
+                currentPage: currentPage, //当前页数
+                numberOfPages: 10, //每次显示页数
+                totalPages: totalPages, //总页数
+                shouldShowPage: true,//是否显示该按钮
+                useBootstrapTooltip: true,
+                //点击事件
+                onPageClicked: function (event, originalEvent, type, page) {
+                    // console.log(type)
+                    // console.log(page)
+                    if(limit!=24){
+                       window.location.href = "/"+menutype+"?page=" + page  + "&limit=" + limit
+                    }else{
+                        window.location.href = "/"+menutype+"?page=" + page 
+                    }
+                }
+            });
+
+        });
+        $('.wow').attr({
+            "data-wow-duration": '200ms',
+            'data-wow-delay': '1s',
+            'data-wow-offset': 0,
+            // 'data-wow-iteration':'infinite'
+        })
+
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 1000,
+                callback: function (box) {
+                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
+    </script>
+
+    <%- include('../common/footer.html'); %>

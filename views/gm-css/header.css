@@ -1,0 +1,116 @@
+body {
+  /* padding-bottom: 40px; */
+  color: #5a5a5a;
+}
+.btn-default {
+  background: none;
+  color: #bcceff;
+  border-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 10px;
+  /* height: 31px; */
+  font-size: 14px;
+  line-height: 31px;
+  padding: 0 12px;
+}
+.btn-default.btn-default1:hover {
+  background: white !important;
+  color: #3860f4 !important;
+  border-color: white !important;
+}
+.btn-default:hover{
+  background: #3860f4 !important;
+  color: white !important;
+  border-color:  #3860f4 !important;
+}
+.btn-blue {
+  background: #3860f4;
+  color: white;
+}
+.btn-white {
+  background: white;
+  color: #3860f4;
+  border-color: #3860f4;
+}
+
+#navbar {
+  padding-top: 10px;
+}
+#navbar a:hover {
+  opacity: 0.8;
+}
+.navbar-wrapper-white {
+  background: white !important;
+}
+.navbar-header {
+  width: 150px;
+  min-height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.logo {
+  width: 90px;
+}
+.navbar-gm {
+  color: white;
+  background: #3860f4;
+  border: none;
+}
+.navbar-whtie {
+  background: white;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #bcceff;
+}
+.navbar-whtie .navbar-nav > li > a {
+  color: #4a4b67;
+}
+.active-gm {
+  color: white;
+  background-color: none;
+  background: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar-whtie .active-gm {
+  border-bottom: 2px solid #3860f4;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  background: #3860f4;
+  font-size: 15px;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container  .navbar-collapse .nav li a:visited{
+  /* width: auto; */
+  /* color: white ; */
+}
+

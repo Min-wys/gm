@@ -1,0 +1,585 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.container-gm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+.featurette-image {
+  width: 488px;
+  position: relative;
+  top: 114px;
+}
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 675px;
+  background-color: #3860f4;
+}
+
+.bg-gray {
+  background-color: rgba(245, 247, 253, 1) !important;
+}
+.carousel .item .active {
+  height: 500px;
+  background-color: #3860f4;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background: none;
+}
+.carousel-control {
+  width: 8% !important;
+  margin-top:50%;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+.lead {
+  color: #bcceff;
+}
+
+/*  */
+.banner-bottm {
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+  top: -56px;
+  /*height: 80px;*/
+  width: 90%;
+  background: linear-gradient(180deg, #e1edfc, #ffffff);
+  /*box-sizing: border-box; */
+  padding: 10px 0px;
+  border: 1px solid #e1e6f0;
+  border-radius: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-item {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+.right-text {
+  margin-left: 20px;
+  line-height: 10px;
+  padding-top: 10px;
+}
+.rigit-title {
+  font-size: 18px;
+  color: #374567;
+  font-weight: 500;
+}
+.right-tips {
+  font-size: 14px;
+  color: #93949d;
+  line-height: 25px;
+}
+
+
+.banner-bottm {
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+  top: -56px;
+  /*height: 80px;*/
+  width: 90%;
+  background: linear-gradient(180deg, #e1edfc, #ffffff);
+  /*box-sizing: border-box; */
+  padding: 10px 0px;
+  border: 1px solid #e1e6f0;
+  border-radius: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-item {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+.right-text {
+  margin-left: 20px;
+  line-height: 10px;
+  padding-top: 10px;
+}
+.rigit-title {
+  font-size: 18px;
+  color: #374567;
+  font-weight: 500;
+}
+.right-tips {
+  font-size: 14px;
+  color: #93949d;
+  line-height: 25px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.markint-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.markint-title .featurette-heading {
+  color: #3b426b;
+  font-size: 32px;
+}
+.markint-title .lead {
+  color: #93949d;
+  font-size: 17px;
+  font-weight: 320;
+}
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette {
+  width: 93%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+.f-warp {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  /*align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+}
+.featurette-divider {
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette-image-w {
+  width: 400px;
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.flex-right {
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.flex-left {
+  align-items: flex-start;
+}
+
+.featurette .right-text {
+  width: 400px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.featurette .btn-area {
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+/*------------------------------------------------
+场景
+*/
+.gm-screen {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gm-s-item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.border-left {
+  border-left: 1px solid #f1f0f0;
+}
+.border-right {
+  border-right: 1px solid #f1f0f0;
+}
+.border-top {
+  border-top: 1px solid #f1f0f0;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #f1f0f0;
+}
+
+.gm-s-item:hover {
+  background: #ffffff;
+  box-shadow: 0px 3px 8px 0px #e4e6f2;
+  border-bottom: 2px solid #3860f4;
+}
+.gs-active {
+  background: #ffffff;
+  box-shadow: 0px 3px 8px 0px #e4e6f2;
+  border-bottom: 2px solid #3860f4;
+}
+.screen-icon {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.gm-s-item .right-text {
+  margin-left: 0px;
+}
+.container-gm-slider2 {
+  background: white;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.container-gm-slider2 .gms2-item {
+  width: 30%;
+  overflow: auto;
+  box-shadow: 0px 3px 8px 0px #e4e6f2;
+}
+
+.flex-middle {
+  padding: 20px 0px;
+  height: auto !important;
+}
+
+.cars-img-avatar {
+  width: 100%;
+  display: block;
+}
+.car-desc {
+  width: 80%;
+  text-align: center;
+  color: #3b426b;
+  font-size: 16px;
+  padding: 20px 0px;
+  margin: 0px auto;
+}
+.cars-img-logo {
+  width: 100px;
+  margin: 10px auto;
+  display: block;
+}
+
+.gm3-screen {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gms3-item {
+  width: 30%;
+  overflow: auto;
+  box-shadow: 0px 3px 8px 0px #e4e6f2;
+  margin-bottom: 30px;
+}
+
+.bg-good {
+  width: 100%;
+  height: 400px;
+  /*background: url(../gm-images/index/bg-good.png);*/
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.bg-good-img {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.bg-good-content {
+  position: absolute;
+  z-index: 2;
+   width: 280px;
+    left: 50%;
+    margin-left: -140px;
+}
+.bg-good-img:hover {
+    transform: scale(1.25);
+}
+@keyframes animatedBackground {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-position: 80%;
+  }
+}
+
+.bg-good-content:hover + .bg-good-img{
+    transform: scale(1.25);
+  /* animation: mymove 0.8s;
+  -webkit-animation: mymove 0.8s; 
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  -webkit-animation: mymove 0.8s;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out; */
+}
+@keyframes mymove {
+  0% {
+    transform: scale(1); /*开始为原始大小*/
+  }
+  75% {
+    transform: scale(1.3);
+  }
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    transform: scale(1); /*开始为原始大小*/
+  }
+  75% {
+    transform: scale(1.3);
+  }
+}
+
+.btn-big {
+  width: 180px;
+  padding: 10px 0px;
+  font-size: 16px;
+  display: block;
+  margin: 0px auto;
+}
+.btn-tank:hover {
+  background-color: #3860f4;
+  color: white;
+}
+
+.gm4-screen {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.gm4-left {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+.gm4-right {
+  width: 40%;
+  text-align: center;
+}
+.gms4-item {
+  text-align: center;
+  padding: 50px 0px;
+}
+.gms4-num {
+  font-size: 50px;
+  font-weight: lighter;
+  color: #3b6bf9;
+}
+.gms4-desc {
+  font-size: 30px;
+}
+.gm4-right h1 {
+  font-size: 40px;
+  font-weight: normal;
+  padding: 20px 0px;
+}
+.gm4-tags {
+  color: #78777a;
+  margin-top: 30px;
+}
+.container-gm-case-slider {
+  display: flex;
+  justify-content: space-between;
+}
+.container-gm-case-slider .case-item {
+  width: 245px;
+}
+
+.bg-none {
+  background: none !important;
+}
+.case-banner {
+  width: 100%;
+  height: 550px !important;
+  object-fit: cover;
+}
+.case-item {
+  box-shadow: 0px 3px 8px 0px #e4e6f2;
+  text-align: center;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  background: white;
+  margin: 0px 10px;
+  height: 360px;
+}
+.case-logo {
+  width: 100px;
+  height: 100px;
+  margin: 12px auto;
+  display: block;
+}
+.case-logo-small {
+  width: 80px;
+  height: 80px;
+}
+.case-title {
+  color: #333333;
+  font-size: 16px;
+}
+.case-desc {
+  width: 80%;
+  margin: 20px auto;
+  margin-top: 30px;
+  color: #333333;
+  font-size: 14px;
+  max-height: 60px;
+
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.case-catename {
+  width: 70px;
+  height: 22px;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  margin: 10px auto 0;
+}
+.btn-case {
+  width: 70%;
+  border-color: #999999;
+  color: #999999;
+}
+.case-tips {
+  color: #374567;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  padding: 70px 0px;
+}
+.all-cases {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.item-split-6 {
+  width: 18%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  height: 308px;
+}
+.container-gm-case-slider {
+  padding: 0px 50px;
+}
+.case-cars-title {
+  text-align: center;
+  color: #374567;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    background: #3860f4;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 136px;
+  }
+  .carousel-control {
+    width: 8% !important;
+  }
+}
+@media (max-width: 1443px) {
+  .carousel-control {
+    width: 3% !important;
+  }
+}
+@media (min-width: 1334px) {
+  .carousel-control {
+    width: 25% !important;
+  }
+}

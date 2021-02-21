@@ -1,0 +1,628 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+a,a:hover{text-decoration:none !important;}
+
+.col-xs-1-5 {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+body {
+  color: #5a5a5a;
+  background:#f8f9ff;
+}
+.btn-default{
+  background: none;
+  color: white;
+  border-color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-right: 10px;
+}
+.btn-blue{
+  background: #3860F4; 
+  color: white;
+}
+.btn-white{
+  background: white;
+  color: #3860F4;
+  border-color:#3860F4;
+}
+
+#navbar{
+  padding-top: 10px;
+}
+.navbar-header{
+  width: 150px;
+  min-height: 60px;
+  display: flex; justify-content: flex-start; align-items: center; flex-direction: row;
+}
+.logo{
+  width: 90px;  
+}
+.navbar-gm{
+  color: white;
+  background: #3860F4; border: none;
+}
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+.active-gm{
+  color: white;
+  background-color: none;
+  background: none;
+  /*border-bottom: 2px solid #FFFFFF;*/
+}
+.navbar{
+  margin-bottom: 0px;
+}
+.navbar-header{
+  display: flex;  align-items: center;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.container-gm{
+  display: flex; flex-direction: row; align-items: center;
+  color: white;
+}
+.featurette-image{
+  width: 100%;
+  margin-top:80px;
+}
+.carousel {
+  height: 259px;
+  margin-bottom: 36px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+.carousel .item {
+  height: 259px;
+  background-color: #3860F4;
+}
+.carousel .item .active {
+  height: 259px;
+  background-color: #3860F4;
+}
+
+/* 资讯maincss -start - by tank */
+/* 左侧菜单 */
+.menulist{
+    border-right:1px solid #E1E6F0;
+}
+.menulist >li>a{
+    text-align: right;
+    font-size: 16px;
+    font-family: PingFang;
+    font-weight: 500;
+    padding:0;
+    color: #374568;
+    padding-right:44px;
+}
+.menulist >li{
+    height:60px;line-height: 60px;
+    position: relative;
+    border-bottom:1px solid #EBF0FC;
+}
+.menulist >li:last-child{
+     /* border-bottom:0; */
+}
+.menulist >li>a::before{
+    position:absolute;
+    content:'';
+    width:8px;height:8px;
+    left:18px;
+    background: url("../gm-images/information/raido.png") no-repeat;
+    top:21px;
+}
+
+.menulist >li.active>a::before{
+    position:absolute;
+    content:'';
+    width:8px;height:8px;
+    left:18px;
+    background: url("../gm-images/information/radio_true.png") no-repeat;
+    top:21px;
+}
+.menulist >li.active{
+    border-right:1px solid #3860F4;
+}
+.menulist >li.active>a{
+    color:#3860F4;
+}
+
+/* 右侧内容 */
+#information_content .breadcrumb{
+    background-color:inherit;
+    height: 22px;
+    font-size: 16px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #3860F4;
+    margin-bottom:25px;
+    margin-top:10px;
+    padding:0;
+}
+#information_content .breadcrumb li a{
+    color:#3860F4
+}
+#information_content .breadcrumb li a.active{
+    color:#3860F4
+}
+#information_content .breadcrumb>li+li:before{
+    content:">";
+    color:#374568
+}
+#information_conten .breadcrumb>.active{
+    font-size: 16px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #505C7C;
+}
+.information_img_clip{
+    width:100%;max-height:158px;
+    overflow:hidden;
+}
+
+#information_content .thumbnail{
+    padding:0;
+    border:1px solid #E1E6F0;
+    margin-bottom:38px;
+}
+#information_content .thumbnail .list_img{
+    width:100%;
+    margin:0;padding:0;
+    
+}
+#information_content .caption{
+    padding: 0 20px;
+}
+#information_content .caption h3{
+    height:43px;
+    margin:20px 0 10px;
+    font-size: 17px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #374567;
+    line-height:21px;
+
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+#information_content .caption .timer{
+    height: 24px;
+    font-size: 14px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #7A8BA6;
+    padding-bottom:7px;
+    border-bottom:1px solid #ECF1FE;
+}
+#information_content .caption .content{
+    height: 90px;
+    font-size: 14px;
+    color: #7A8BA6;
+    line-height: 24px;
+
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical
+}
+#information_content .caption  .clkurl{
+    text-align: right;
+}
+#information_content .caption  .clkurl img{
+    margin:20px auto 16px;
+    margin-right: unset;
+}
+/* 资讯maincss -end by tank*/
+
+
+/* 资讯详情css */
+#information_content .detail{
+    margin:30px 0 42px 60px;
+}
+#information_content .detail .title{
+    font-size: 18px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #374567;
+    margin-bottom:15px;
+}
+#information_content .detail .desc{
+    background:#fff;
+    border:1px dashed #dcdcdc;
+    padding:20px 15px;
+    font-size:14px;color:#5A5D5A;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#information_content .detail .desc span{
+    font-size: 17px;
+}
+#information_content .detail .tips span{
+    font-size: 12px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #7A8BA6;
+    margin-bottom: 15px;
+    margin-right:5px;
+}
+#information_content .detail .tips a{
+    font-size: 12px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #7A8BA6;
+    margin-bottom: 15px;
+    margin-right:5px;
+}
+#information_content .detail .cont{
+
+    font-size: 14px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #5A5D5A;
+    line-height:24px;
+}
+
+#information_content  .message{
+    margin-left:60px;
+}
+#information_content  .message  .message_title{
+    text-align:center;
+    font-size: 28px;
+    font-family: PingFang;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom:30px;
+}
+#information_content .message .qr_left {
+   text-align:center;
+}
+
+#information_content .message .qr_left img{
+    width:190px;
+    margin-bottom: 15px;
+}
+#information_content .message .qr_left p{
+    font-size: 14px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #333333;
+}
+#information_content .message .user_right input{
+    height: 42px;
+    width:100%;
+    background: #EEECEC;
+    border: 1px solid #DFDFDF;
+    border-radius: 4px;
+    margin-bottom:27px;
+}
+.subUserinfo{
+    height: 42px;
+    background: #748292;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height:42px;
+    padding:0;margin:0;
+    margin-bottom:34px;
+}
+.subUserinfo:hover{color: #FFFFFF;}
+#information_content .line{
+    margin-left:60px;
+    height: 1px;
+    background: #CCCCCC;
+    clear:both;
+}
+.information_other{
+     margin-left:60px;
+     margin-bottom:30px;
+}
+.information_other a,.information_other a:hover{
+    color:#5A5D5A;
+}
+.information_other p{
+    margin-top:15px;
+}
+.share span{
+    vertical-align: top;
+    margin-right:20px;
+}
+.share img{
+    cursor: pointer;
+    margin-right:15px;
+}
+/* 相关资讯 */
+#information_content .other{
+    margin-left:60px;
+}
+#information_content .other .banner ,#information_content .comment .banner{
+    font-size: 21px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #333333;
+    padding:0 21px 12px ;
+    border-bottom:1px solid #CCCCCC;
+    margin-bottom:22px;
+}
+
+.other_list p{
+    padding:8px;
+    height: 54px;
+    font-size: 14px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #333333;
+    line-height: 16px;
+    display: -webkit-box;
+    overflow: hidden;
+    white-space: normal !important;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+ .other_list .col-md-1-5 .thumbnail{
+     margin-bottom:20px !important;
+ }
+ #information_content .comment{
+     clear:both;
+    margin-left:60px;
+    padding-top:20px;
+}
+
+/* 联系我们 */
+.contact_us{
+    background:#fff;
+    padding:54px 98px 60px;
+    position: relative;
+}
+  .item_info{
+    display:inline-block;
+    margin-right:54px;
+}
+  .item_info_row{
+    display:block;
+    margin-right:54px;
+    margin-top:33px;
+}
+  .item_info img:first-child{
+    height:18px;
+    margin-right:9px;
+    margin-top: -3px;;
+}
+  .item_info p{
+    line-height:18px;
+    font-size: 18px;
+    font-family: PingFang;
+    font-weight: bold;
+    color: #374567;
+}
+.company_info  .item_info .basic_info{
+    font-size: 16px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #8794AC;
+    margin-top:19px;
+    margin-left:26px;
+}
+.us_qrcode{
+    position:absolute;
+    right:160px;
+    margin-right:0 !important;
+    top:54px;
+}
+.us_qrcode .sm_info{
+    font-size: 16px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #8794AC;
+    line-height:28px;
+    margin-bottom:0;
+}
+
+#information_content .us_line{
+    height: 1px;
+    background: #CCCCCC;
+    clear:both;
+    margin:60px 0 30px;
+}
+#information_content .map p{
+    margin-bottom:17px;
+}
+#information_content .map_img img{
+    width:667px;height:391px !important;
+}
+/* 联系我们end */
+
+/* 荣誉证书 */
+.certificate_info{
+    background:#fff;
+    padding:50px;
+}
+.certificate_info .qualification p{
+    margin-top:20px !important;
+}
+.certificate_info .qualification p,.certificate_info .certificate p{
+    font-size: 34px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #374567;
+    text-align: center;
+    margin-top:50px;
+}
+.certificate_info img{
+    width:100%;
+}
+.isfee{
+    padding:0;margin:0;
+    margin-top:118px;
+}
+
+/* 企业 介绍*/
+.company_page{
+    margin:10px 0 42px 50px
+}
+.company_page .company_title{
+    text-align: center;
+    font-size: 26px;
+    font-family: Hiragino Sans GB;
+    font-weight: normal;
+    color: #364566;
+    margin-bottom:40px;
+}
+.company_page  .company_img{
+    width: 637px;
+    height: 365px;
+    margin:20px auto 36px;
+    display: block;
+}
+.company_detail{
+    padding-bottom:40px;
+}
+.company_detail p{
+    font-size: 16px;
+    font-family: Hiragino Sans GB;
+    font-weight: normal;
+    color: #8594A9;
+    text-indent: 32px;
+    padding-bottom: 14px;
+}
+
+.timeline-lr p,.timeline-lr h4{
+    text-align: right;
+}
+
+.timeline-item p,.timeline-item h4{
+    font-size: 16px;
+    font-family: PingFang;
+    font-weight: bold;
+    color: #798CAA !important;
+}
+.timeline-item  .timeline-heading{
+    margin-top:30px;
+}
+.timeline-item  .timeline-heading:first-child{
+    margin-top:0px;
+}
+.timeline-heading h4{
+    font-size: 18px;
+    font-family: PingFang;
+    font-weight: 500;
+    color: #374667;
+    margin-bottom:30px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    background: #3860F4;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}

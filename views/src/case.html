@@ -1,0 +1,158 @@
+<%- include('../common/header.html'); %>
+    <link href="../gm-css/index.css" rel="stylesheet">
+<body>
+
+   <!-- 导航 -->
+    <%- include('../common/nav-white.html'); %>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 20px; padding-top: 30px;">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active bg-none">
+          <img class="case-banner" src="../gm-images/case-banner.png">
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+    
+
+    <!-- 轮播-观麦CEO专访 -->
+    <div id="myCarousel2" class="carousel slide bg-gray" data-ride="carousel" style="margin-bottom: 20px; padding-top: 68px;">
+      <div class="case-cars-title">他们都在用观麦SaaS配送系统</div>
+      <div class="carousel-inner " role="listbox">
+        <% 
+            var n = 0;
+            for(var i=0;i<Math.ceil(recommendlist.length/4);i++){
+            %>
+            <div class="item <% if(n<=3) { %> active <% } %>  flex-middle bg-gray">
+                <div class="container container-gm-case-slider">
+            <% 
+                for(var j=0;j<=3;j++){
+                   
+            %>
+                <div class="case-item case-item-tank" >
+                    <img class="case-logo" src="<%=recommendlist[n].image%>">
+                    <div class="case-title"><%=recommendlist[n].title %></div>
+                    <% if (recommendlist[n].cateid == "1") { %>
+                    <div class="case-catename">社区团购</div>
+                    <% }else{ %>
+                    <div class="case-catename">其他</div>
+                    <% } %>
+                    <div class="case-desc"><%=recommendlist[n].desc%></div>
+
+                    <% if(recommendlist[n].link){%>
+                         <a class="btn btn-default btn-white btn-case" href="<%=recommendlist[n].link %>" role="button">查看案例 &raquo;</a>
+                    <% }else {%>
+                         <a class="btn btn-default btn-white btn-case" href="/case_detail/<%=recommendlist[n].id %>" role="button">查看案例 &raquo;</a>
+                     <% }%>
+                </div>
+            <% 
+                n++;
+                if(n>recommendlist.length-1){
+                        break;
+                }
+            }
+         %>
+
+            </div>
+            </div>
+        <% } %>
+ 
+
+      </div>
+
+      <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" style="color: rgb(143,143,143);" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" style="color: rgb(143,143,143);" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div><!-- /.carousel -->
+
+    <div class="container">
+
+      <div class="case-tips">（ *以下排名不分先后顺序 ）</div>
+      <div class="all-cases">
+        <% list.forEach(function(item){%>
+        <div class="case-item item-split-6">
+            <img class="case-logo case-logo-small" src="<%=item.image%>">
+            <div class="case-title"><%=item.title%></div>
+            <div class="case-desc"><%=item.desc%></div>
+            <% if(item.link){%>
+                <a class="btn btn-default btn-white btn-case" href="<%=item.link%>" role="button">查看店铺 &raquo;</a>
+            <% }else {%>
+                <a class="btn btn-default btn-white btn-case" href="/case_detail/<%=item.id%>" role="button">查看店铺 &raquo;</a>
+            <% }%>
+        </div>
+        <% }) %>
+    
+      </div>
+      <div style="margin-top: 50px;">
+        <ul id="page"></ul>
+      </div>
+
+
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            var menutype = "case";
+            var currentPage = "<%=page %>";
+            var total = "<%=total[0].total %>";
+            // var limit = "<%=limit %>";
+            var limit = 25;
+            var totalPages = Math.ceil(total / limit);
+            if (totalPages <= 1) {
+                return false;
+            }
+           $("#page").bootstrapPaginator({
+               bootstrapMajorVersion:3, //对应的bootstrap版本
+               currentPage: currentPage, //当前页数
+               numberOfPages: 10, //每次显示页数
+               totalPages:totalPages, //总页数
+               shouldShowPage:true,//是否显示该按钮
+               useBootstrapTooltip:true,
+               //点击事件
+               onPageClicked: function (event, originalEvent, type, page) {
+                  console.log(type)
+                  console.log(page)
+                  window.location.href = "/" + menutype + "?page=" + page
+                //     if (limit != 25) {
+                //        window.location.href = "/" + menutype + "?page=" + page + "&limit=" + limit
+                //     } else {
+                //        window.location.href = "/" + menutype + "?page=" + page
+                //    }
+               }
+           });
+
+        });
+
+        var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        });
+
+
+        $(document).ready(function() {
+            $('.myCarousel2').carousel({
+                interval: 1200,
+                pause: "hover"
+            });
+
+            $('.case-item-tank').hover(function() {
+                $("#myCarousel2").carousel('pause');
+            },function() {
+                $("#myCarousel2").carousel('cycle');
+            });
+        });
+    </script>
+   
+
+  
+<%- include('../common/footer.html'); %>

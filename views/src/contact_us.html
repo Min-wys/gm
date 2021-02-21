@@ -1,0 +1,97 @@
+<%- include('../common/header.html'); %>
+    <link href="../gm-css/information.css" rel="stylesheet">
+<body>
+
+   <!-- 导航 -->
+    <%- include('../common/nav.html'); %>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!--       <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      
+      </ol> -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+
+                <div class="container container-gm">
+                    <div class="col-md-10 col-md-offset-2">
+                        <img class="featurette-image  " src="../gm-images/us/us.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.carousel -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container information">
+        <div class="row">
+            <div class="col-md-2" role="complementary">
+                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                    <ul class="nav bs-docs-sidenav menulist">
+                        <li class="">
+                            <a href="/about_us">企业介绍</a>
+                        </li>
+                        <li class="active">
+                            <a href="/contact_us">联系我们</a>
+                        </li>
+                        <li class="">
+                            <a href="/certificate">荣誉证书</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-10 " role="main" id="information_content">
+                <ul class="breadcrumb">
+                    <li >联系我们</li>
+                </ul>
+                <div class="contact_us">
+                    <div class="company_info">
+                        <div class="item_info">
+                            <p><img src="../gm-images/us/ej.png" alt="">全国服务热线</p>
+                            <a href="tel:400-860-0906" class="basic_info"><%=detail.company_phone%></a>
+                        </div>
+                        <div class="item_info">
+                            <p><img src="../gm-images/us/timer.png" alt="">服务时间</p>
+                            <p class="basic_info"><%=detail.service_time%></p>
+                        </div>
+
+                        <div class="item_info item_info_row">
+                            <p><img src="../gm-images/us/address.png" alt="">公司地址</p>
+                            <p  class="basic_info"><%=detail.address%></p>
+                        </div>
+                        <div class="item_info item_info_row">
+                            <p><img src="../gm-images/us/qywz.png" alt="">企业网站</p>
+                            <p class="basic_info"><%=detail.website%></p>
+                        </div>
+                    </div>
+                    <div class="item_info us_qrcode">
+                         <p><img src="../gm-images/us/gywm.png" alt="">关于我们</p>
+                         <p class="sm_info">扫描下方的二维码<br />关注公众号</p>
+                         <img src="<%=detail.qrcode %>" alt="">
+                    </div>
+                    <div class="us_line"></div>
+                    <!-- 地图 -->
+                    <div class="map item_info item_info_row">
+                        <p><img src="../gm-images/us/dz.png" alt="">观麦科技（深圳市观麦网络科技有限公司）地址</p>
+                        <div class="map_img">
+                            <img src="<%=detail.map_image%>" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--     <div class="col-md-12 isfee">
+        <img src="../gm-images/information/isfee.png" alt="" width="100%">
+    </div> -->
+<%- include('../common/footer.html'); %>
