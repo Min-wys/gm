@@ -59,13 +59,14 @@
   color: #bcceff;
 }
 
-/*  */
+
+
+
 .banner-bottm {
   margin: 0px auto;
   position: relative;
   z-index: 2;
   top: -56px;
-  /*height: 80px;*/
   width: 90%;
   background: linear-gradient(180deg, #e1edfc, #ffffff);
   /*box-sizing: border-box; */
@@ -74,6 +75,33 @@
   border-radius: 1px;
   display: flex;
   justify-content: space-between;
+}
+
+/* 首页三个框框 */
+.b-item-banner {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+}
+.banner-right-text {
+  /* margin-left: 20px; */
+  margin: 7px 0px 3px 20px;
+  line-height: 10px;
+  padding-top: 10px;
+}
+.banner-rigit-title {
+  font-size: 17px;
+  color: #374567;
+  font-weight: 400;
+  /* margin: 0; */
+}
+.banner-right-tips {
+  font-size: 14px;
+  color: #93949d;
+  line-height: 18px;
+  /* margin: 0; */
 }
 
 .b-item {
@@ -89,54 +117,15 @@
   padding-top: 10px;
 }
 .rigit-title {
-  font-size: 18px;
+  font-size: 17px;
   color: #374567;
-  font-weight: 500;
+  font-weight: 400;
 }
 .right-tips {
   font-size: 14px;
   color: #93949d;
   line-height: 25px;
-}
-
-
-.banner-bottm {
-  margin: 0px auto;
-  position: relative;
-  z-index: 2;
-  top: -56px;
-  /*height: 80px;*/
-  width: 90%;
-  background: linear-gradient(180deg, #e1edfc, #ffffff);
-  /*box-sizing: border-box; */
-  padding: 10px 0px;
-  border: 1px solid #e1e6f0;
-  border-radius: 1px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.b-item {
-  width: 33.33%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 20px;
-}
-.right-text {
-  margin-left: 20px;
-  line-height: 10px;
-  padding-top: 10px;
-}
-.rigit-title {
-  font-size: 18px;
-  color: #374567;
-  font-weight: 500;
-}
-.right-tips {
-  font-size: 14px;
-  color: #93949d;
-  line-height: 25px;
+  margin-bottom: 39px;
 }
 
 /* MARKETING CONTENT
@@ -155,7 +144,8 @@
 .markint-title .lead {
   color: #93949d;
   font-size: 17px;
-  font-weight: 320;
+  font-weight: 400;
+  padding-top: 5px;
 }
 .marketing .col-lg-4 {
   margin-bottom: 20px;
@@ -215,7 +205,7 @@
 }
 
 .featurette .btn-area {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 0px;
 }
 
@@ -581,5 +571,24 @@
 @media (min-width: 1334px) {
   .carousel-control {
     width: 25% !important;
+  }
+}
+/* 小于等于992生效 */
+@media (max-width: 992px) {
+  .banner-bottm{
+    height: 100px !important;
+    background-color: yellow !important;
+  }
+}
+/* 小于1443大于1334生效 */
+@media (min-width:1334px) and (max-width:1443px) {
+  .banner-bottm{
+    height: 110px;
+  }
+}
+/* 大于等于1443生效 */
+@media (min-width: 1443px) {
+  .banner-bottm{
+    height: 120px;
   }
 }
