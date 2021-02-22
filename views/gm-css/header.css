@@ -4,18 +4,41 @@ body {
 }
 .btn-default {
   background: none;
-  color: #bcceff;
+  color: #d7e1ff;
   border-color: white;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-right: 20px;
+  height: 40px;
+  width: 143px;
+  font-size: 18px;
+  line-height: 40px;
+  padding: 0 12px;
+  font-weight: normal;
+}
+/* 头部的按钮 */
+.btn-default-header {
+  background: none;
+  color: #d7e1ff;
+  border-color: #d7e1ff;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-right: 10px;
-  /* height: 31px; */
-  font-size: 14px;
+  /* height: 40px;
+  width: 143px; */
+  font-size: 16px;
   line-height: 31px;
   padding: 0 12px;
+  font-weight: 400;
 }
+.btn-default-header:hover{
+  background: #fff ;
+  color: #3860f4 ;
+  border-color: white ;
+}
+/* 其余按钮 */
 .btn-default.btn-default1:hover {
-  background: white !important;
+  background: #fff !important;
   color: #3860f4 !important;
   border-color: white !important;
 }
@@ -62,6 +85,10 @@ body {
 .navbar-whtie {
   background: white;
 }
+.navbar-nav{
+  font-size: 18px;
+  font-weight: normal;
+}
 .navbar-default .navbar-nav > li > a {
   color: #bcceff;
 }
@@ -69,7 +96,7 @@ body {
   color: #4a4b67;
 }
 .active-gm {
-  color: white;
+  color: white !important;
   background-color: none;
   background: none;
   border-bottom: 2px solid #ffffff;

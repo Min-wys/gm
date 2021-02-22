@@ -46,7 +46,7 @@
 }
 .carousel-control {
   width: 8% !important;
-  margin-top:50%;
+  margin-top: 50%;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -56,11 +56,9 @@
   height: 500px;
 }
 .lead {
-  color: #bcceff;
+  color: #d7e1ff;
+  font-weight: normal;
 }
-
-
-
 
 .banner-bottm {
   margin: 0px auto;
@@ -92,16 +90,16 @@
   padding-top: 10px;
 }
 .banner-rigit-title {
-  font-size: 17px;
+  font-size: 18px;
   color: #374567;
   font-weight: 400;
   /* margin: 0; */
 }
 .banner-right-tips {
-  font-size: 14px;
+  font-size: 15px;
   color: #93949d;
-  line-height: 18px;
-  /* margin: 0; */
+  line-height: 20px;
+  font-weight: normal;
 }
 
 .b-item {
@@ -117,15 +115,17 @@
   padding-top: 10px;
 }
 .rigit-title {
-  font-size: 17px;
+  font-size: 26px;
   color: #374567;
-  font-weight: 400;
+  font-weight: 500;
+  margin-bottom: 18px;
 }
 .right-tips {
-  font-size: 14px;
+  font-size: 15px;
   color: #93949d;
   line-height: 25px;
   margin-bottom: 39px;
+  font-weight: 400;
 }
 
 /* MARKETING CONTENT
@@ -139,11 +139,11 @@
 }
 .markint-title .featurette-heading {
   color: #3b426b;
-  font-size: 32px;
+  font-size: 34px;
 }
 .markint-title .lead {
   color: #93949d;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   padding-top: 5px;
 }
@@ -186,7 +186,7 @@
 }
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -1px;
 }
@@ -336,12 +336,12 @@
 .bg-good-content {
   position: absolute;
   z-index: 2;
-   width: 280px;
-    left: 50%;
-    margin-left: -140px;
+  width: 280px;
+  left: 50%;
+  margin-left: -140px;
 }
 .bg-good-img:hover {
-    transform: scale(1.25);
+  transform: scale(1.25);
 }
 @keyframes animatedBackground {
   from {
@@ -352,8 +352,8 @@
   }
 }
 
-.bg-good-content:hover + .bg-good-img{
-    transform: scale(1.25);
+.bg-good-content:hover + .bg-good-img {
+  transform: scale(1.25);
   /* animation: mymove 0.8s;
   -webkit-animation: mymove 0.8s; 
   animation-direction: alternate;
@@ -551,7 +551,7 @@
   }
 
   .featurette-heading {
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 
@@ -575,20 +575,20 @@
 }
 /* 小于等于992生效 */
 @media (max-width: 992px) {
-  .banner-bottm{
+  .banner-bottm {
     height: 100px !important;
     background-color: yellow !important;
   }
 }
 /* 小于1443大于1334生效 */
-@media (min-width:1334px) and (max-width:1443px) {
-  .banner-bottm{
+@media (min-width: 1334px) and (max-width: 1443px) {
+  .banner-bottm {
     height: 110px;
   }
 }
 /* 大于等于1443生效 */
 @media (min-width: 1443px) {
-  .banner-bottm{
+  .banner-bottm {
     height: 120px;
   }
 }

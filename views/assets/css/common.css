@@ -1,0 +1,37 @@
+/* 定义公共字体的大小 */
+.font-bold-35{
+    font-size: 35px;
+    font-weight: 500;
+}
+.font-bold-30{
+    font-size: 30px;
+    font-weight: 500;
+}
+.font-regular-17{
+    font-size: 17px;
+    font-weight: 400;
+}
+.font-regular-18{
+    font-size: 18px;
+    font-weight: 400;
+}
+.font-regular-16{
+    font-size: 16px;
+    font-weight: 400;
+}
+.font-light-16{
+    font-size: 18px;
+    font-weight: 300;
+}
+.font-regular-15{
+    font-size: 15px;
+    font-weight: 400;
+}
+.font-light-14{
+    font-size: 14px;
+    font-weight: 300;
+}
+.font-regular-12{
+    font-size: 30px;
+    font-weight: 400;
+}
