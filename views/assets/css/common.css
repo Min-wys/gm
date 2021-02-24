@@ -31,7 +31,31 @@
     font-size: 14px;
     font-weight: 300;
 }
+.font-light-64{
+    font-size: 53px;
+    font-weight: 300;
+}
 .font-regular-12{
     font-size: 30px;
     font-weight: 400;
+}
+.font-regular-27{
+    font-size: 27px !important;
+    font-weight: 400;
+}
+/* 字体颜色 */
+.fontColor-tint-black{
+    color: #3b426b;
+}
+.fontColor-dark-black{
+    color: #7a8ba6;
+}
+.fontColor-white{
+    color: #fff;
+}
+.fontColor-tint-white{
+    color: #d7e1ff;
+}
+.margin-auto{
+    margin: 0 auto;
 }
