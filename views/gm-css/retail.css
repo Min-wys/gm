@@ -29,12 +29,14 @@ ul{
 }
 #retail  .banner-text{
   margin-top: 26px;
+  margin-bottom: 36px;
   font-size: 18px;
   font-family: PingFang;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #bdceff;
   text-align: left;
   margin-left:0px;
+  line-height: 18px;
 }
 #retail  .banner-text p {
  padding-left: 0;
@@ -116,9 +118,9 @@ ul{
 #retailDifficult .retail-difficult-item div span{
   display: block;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   font-family: Hiragino Sans GB;
-  font-weight: normal;
+  font-weight: 400;
   color: #3B426B;
   line-height: 51px;
 }
@@ -146,6 +148,9 @@ ul{
   background-color: #f7f9fa;
 }
 
+#retailSystem .retail-system-item{
+  padding: 90px 0;
+}
 
 #retailSystem .retail-system-item:nth-child(2n){
   background: #F7FBFF;
@@ -156,6 +161,16 @@ ul{
 #retailSystem .retail-system-item .container>div.retail-system-item-l{
   float: left;
   clear: both;
+}
+.retail-system-item-r-img-10{
+  display: block;
+  width: 550px;
+  margin: -10px 0px 0px 30px;
+}
+.retail-system-item-r-img-11{
+  display: block;
+  width: 550px;
+  margin: 0px 0px 0px 0px;
 }
 #retailSystem .retail-system-item .container>div.retail-system-item-r{
   float: left;
@@ -172,29 +187,33 @@ ul{
   margin-bottom: 40px;
 }
 .tank-text-left{
-    margin-left: 120px;width:calc(50% - 120px) !important;
+  margin-left: 106px;
+  width: calc(50% - 105px) !important;
 }
 #retailSystem .retail-system-item .container>div.retail-system-item-content ul li {
   line-height: 20px;
-  font-size: 16px;
+  font-size: 15px;
   color: #3F404E;
   margin-bottom:40px;
 }
 #retailSystem .retail-system-item .container>div.retail-system-item-content>div{
   margin-top: 56px;
+  display: flex;
 }
-#retailSystem .retail-system-item .container>div.retail-system-item-content>div button{
+#retailSystem .retail-system-item .container>div.retail-system-item-content>div div{
   height: 40px;
+  width: 154px;
   line-height: 40px;
   padding: 0 40px;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #FFFFFF;
   border: solid 1px  #105cfb;
   color: #105cfb;
   border-radius: 20px;
   margin-right: 20px;
+  overflow: hidden;
 }
-#retailSystem .retail-system-item .container>div.retail-system-item-content>div button:first-child{
+#retailSystem .retail-system-item .container>div.retail-system-item-content>div div:hover{
   background-color: #105cfb;
   color: #fff;
 }

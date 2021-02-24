@@ -52,8 +52,10 @@ ul {
   border-color: white;
 }
 #kitchenBanner .platform-img {
-  margin-top: 80px;
-  max-width: 100%;
+  /* margin-top: 80px;
+  max-width: 100%; */
+  width: 660px;
+  margin-left: -70px;
 }
 
 #kitchenAdvantage .container {
@@ -347,16 +349,15 @@ ul {
   position: absolute;
   bottom: -84px;
   right: -10px;
-  width: 300%;
+  width: 47vw;
   border-bottom: 2px solid #dae2fc;
-  
 }
 .right-tips-right::after{
   content: "";
   position: absolute;
   bottom: -84px;
   left: -10px;
-  width: 300%;
+  width: 46vw;
   border-bottom: 2px solid #dae2fc;
 }
 .f-warp {

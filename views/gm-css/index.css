@@ -601,21 +601,21 @@
   }
 }
 /* 小于等于992生效 */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .banner-bottm {
     height: 100px !important;
     background-color: yellow !important;
   }
-}
+} */
 /* 小于1443大于1334生效 */
-@media (min-width: 1334px) and (max-width: 1443px) {
+/* @media (min-width: 1334px) and (max-width: 1443px) {
   .banner-bottm {
     height: 110px;
   }
-}
+} */
 /* 大于等于1443生效 */
-@media (min-width: 1443px) {
+/* @media (min-width: 1443px) {
   .banner-bottm {
     height: 120px;
   }
-}
+} */
