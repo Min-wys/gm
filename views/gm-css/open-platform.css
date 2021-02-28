@@ -270,12 +270,12 @@ ul {
 
 @media (min-width: 992px) {
   #OpenPlatformBanner .platform-img {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 @media (max-width: 1443px) {
   #OpenPlatformBanner .platform-img {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 @media (min-width: 1334px) {

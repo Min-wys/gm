@@ -483,6 +483,7 @@
                 offset: 1,
             }
             // up(obj); up(obj2);up(obj3)
+            //只触发一次
             let flag = true;
             window.onscroll = function(){
                 const rectObject = document.getElementsByClassName("container-change")[0].getBoundingClientRect();
@@ -492,7 +493,6 @@
                     up(obj); up(obj2);up(obj3)
                     flag = false
                 }
-                console.log(rectObjectTop,htmlHeight)
             }
         })
         function up(obj) {

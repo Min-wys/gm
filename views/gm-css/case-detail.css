@@ -1,0 +1,150 @@
+.case-detail {
+  margin-right: 60px !important;
+}
+.case-detail-border {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: solid 1px #e1e6f0;
+  margin-left: 0px;
+}
+.case-detail-header {
+  padding-top: 120px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.case-detail-hTitle {
+  width: 293px;
+  text-align: right;
+}
+.case-detail-hTitle-top {
+  font-family: PingFang-SC-Bold;
+  font-size: 40px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.case-detail-hTitle-bottom {
+  font-family: Benmo-Qianghei;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #9eadf9;
+}
+.case-detail-hTitle-image {
+  height: 110px;
+  /* margin-right: 100px; */
+}
+.new-article-position {
+  position: relative;
+}
+.new-article-outer {
+  position: absolute;
+  top: 57px;
+  right: -39%;
+  width: 35%;
+}
+.new-article-padding {
+  padding: 0 20px;
+}
+.new-article {
+  background-color: #ffffff;
+  border: solid 1px #e1e6f0;
+  border-top: solid 6px #4285f4;
+  border-radius: 2px;
+}
+.new-articl-header {
+  margin: 5px 0px;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  color: #374567;
+}
+.new-articl-header::before {
+  content: "|";
+  background-color: #4285f4;
+  color: #4285f4;
+  margin-right: 5px;
+}
+.new-article-padding ul {
+  list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
+}
+.new-article-padding ul li {
+  margin: 17px 0;
+}
+.new-article-padding ul li p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #374567;
+}
+.new-article-padding ul li div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #717887;
+  margin-top: 6px;
+}
+.new-article-footer {
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background-color: #4285f4;
+  border-radius: 2px;
+  font-size: 17px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.many-view {
+  width: 100%;
+  padding: 20px;
+  margin-top: 25px;
+}
+.many-view p {
+  font-size: 18px;
+  font-weight: normal;
+  color: #374567;
+}
+.many-view .next {
+  position: relative;
+}
+.many-view .next::after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 2px;
+  background-color: #e1e6f0;
+  color: #e1e6f0;
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+}
+.many-view .name {
+  padding-top: 20px;
+}
+.many-view div {
+  font-size: 14px;
+  font-weight: normal;
+  color: #717887;
+}
+
+.many-view div:nth-of-type(1) {
+  height: 63px;
+  display: -webkit-box;
+  /* 文本行排列方向 */
+  -webkit-box-orient: vertical;
+  /* 设置几行之后出现溢出省略号 */
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.many-view div:nth-of-type(2){
+    margin-top: 15px;
+}
+.many-view div:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
+}

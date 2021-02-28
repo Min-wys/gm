@@ -175,7 +175,7 @@ body {
     width:8px;height:8px;
     left:18px;
     background: url("../gm-images/information/raido.png") no-repeat;
-    top:21px;
+    top:28px;
 }
 
 .menulist >li.active>a::before{
@@ -184,7 +184,7 @@ body {
     width:8px;height:8px;
     left:18px;
     background: url("../gm-images/information/radio_true.png") no-repeat;
-    top:21px;
+    top:28px;
 }
 .menulist >li.active{
     border-right:1px solid #3860F4;

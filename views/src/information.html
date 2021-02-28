@@ -52,7 +52,13 @@
             </div>
             <div class="col-md-10" role="main" id="information_content">
                 <ul class="breadcrumb">
-                    <li><a class="active">观麦新闻</a></li>
+                    <li>
+                        <% if (gm_active == "information") { %> <a class="active">观麦新闻</a> <% } %>
+                        <% if (gm_active == "activities") { %> <a class="active">回顾新闻</a> <% } %>
+                        <% if (gm_active == "newfunction") { %> <a class="active">新功能</a> <% } %>
+                        <% if (gm_active == "fresh") { %> <a class="active">生鲜课堂</a> <% } %>
+                        
+                    </li>
                 </ul>
                 <div class="row">
                     <% listData.forEach(function(item){%>
@@ -75,6 +81,10 @@
                     </div>
                     <% }) %>
                 </div>
+
+                <div style="margin-top: 50px">
+                    <ul id="page"></ul>
+                  </div>
             </div>
         </div>
 

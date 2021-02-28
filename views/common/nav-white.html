@@ -1,29 +1,99 @@
 <div class="navbar-wrapper navbar-wrapper-white">
     <div class="container">
         <nav class="navbar navbar-default navbar-gm navbar-whtie">
-            <div class="container">
+            <div class="container navposition">
                 <div class="navbar-header">
                     <img src="../gm-images/logo-blue.png" class="logo">
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                      <ul class="nav navbar-nav">
                         <li class='<% if (gm_active == "index") { %> active-gm <% } %>'><a href="/">首页</a></li>
-                        <li class='<% if (gm_active == "kitchen") { %> active-gm <% } %>' ><a href="/kitchen">中央厨房</a></li>
-                        <li class='<% if (gm_active == "charge") { %> active-gm <% } %>' class="nav-system"><a href="/charge">了解系统</a></li>
-                        <li class='<% if (gm_active == "open-platform") { %> active-gm <% } %>' ><a href="/open-platform">开放平台</a></li>
-                        <li class='<% if (gm_active == "retail") { %> active-gm <% } %>' ><a href="/retail">新零售</a></li>
-                        <li class='<% if (gm_active == "class-center") { %> active-gm <% } %>' ><a href="/class-center">课程中心</a></li>
+                        <li class='<% if (gm_active == "kitchen" || gm_active == "retail" || gm_active == "charge" || gm_active == "open-platform" || gm_active == "class-center" || gm_active == "delivery") { %> active-gm <% } %> nav-system' ><a class=>了解系统</a></li>
                         <li class='<% if (gm_active == "case") { %> active-gm <% } %>'><a href="/case">合作案例</a></li>
                         <li class='<% if (gm_active == "information") { %> active-gm <% } %>'><a href="/information">观麦资讯</a></li>
                         <li class='<% if (gm_active == "about_us") { %> active-gm <% } %>'><a href="/about_us">关于我们</a></li>
                     </ul>
                     <form class="navbar-form navbar-right">
-                        <button type="submit" class="btn btn-default btn-white">立即登录</button>
-                        <button type="submit" class="btn btn-default btn-white">免费试用</button>
+                        <button type="submit" class="btn btn-default-header-white btn-white btn-default-header">立即登录</button>
+                        <button type="submit" class="btn btn-default-header-white btn-white btn-default-header">免费试用</button>
                     </form>
                 </div>
+                <div id="navbar-navigation">
+                    <ul>
+                      <li class="bottomBorder marginRight">
+                        <div class="navbar-navigation-header">
+                          <img src="../gm-images/index/screen-icon6.png" />
+                          <!-- class="screen-icon wow fadeInUp" 动画效果-->
+                          <span class="navbar-navigation-headerText">配送系统</span>
+                        </div>
+                        <p class="navbar-navigation-bottom-text">
+                          让农产品流通更高效，配送<br />企业管理效率提升显著
+                        </p>
+                      </li>
+                      <li class="bottomBorder marginRight">
+                        <div class="navbar-navigation-header">
+                          <img src="../gm-images/index/screen-icon6.png" />
+                          <span class="navbar-navigation-headerText"><a class="fontColor-nav" href="/kitchen">中央厨房</a></span>
+                        </div>
+                        <p class="navbar-navigation-bottom-text">
+                          社区配送 | 净菜 | 肉类加工<br />冷链冷库平台｜大宗批发
+                        </p>
+                      </li>
+                      <li class="bottomBorder ">
+                        <div class="navbar-navigation-header">
+                          <img src="../gm-images/index/screen-icon6.png" />
+                          <span class="navbar-navigation-headerText"><a class="fontColor-nav" href="/retail">新零售系统</a></span>
+                        </div>
+                        <p class="navbar-navigation-bottom-text">
+                          实现生鲜全渠道拓客和供应<br />链全流程数字化管理
+                        </p>
+                      </li>
+                      <li class="marginRight">
+                        <div class="navbar-navigation-header">
+                          <img src="../gm-images/index/screen-icon6.png" />
+                          <span class="navbar-navigation-headerText"><a class="fontColor-nav" href="/charge">系统价格</a></span>
+                        </div>
+                        <p class="navbar-navigation-bottom-text">
+                          我们不比价格只比服务，<br />诚信经营为本，公平交易为先
+                        </p>
+                      </li>
+                      <li class="marginRight">
+                        <div class="navbar-navigation-header">
+                          <img src="../gm-images/index/screen-icon6.png" />
+                          <span class="navbar-navigation-headerText"><a class="fontColor-nav" href="/open-platform">开放平台</a></span>
+                        </div>
+                        <p class="navbar-navigation-bottom-text">
+                          定义生鲜配送生态圈，领跑<br />食物配送企业SaaS服务
+                        </p>
+                      </li>
+                      <li>
+                        <div class="navbar-navigation-header">
+                          <img src="../gm-images/index/screen-icon6.png" />
+                          <span class="navbar-navigation-headerText"><a class="fontColor-nav"  href="/class-center">课程中心</a></span>
+                        </div>
+                        <p class="navbar-navigation-bottom-text">
+                          打造金牌产品顾问与企业<br />用户交流平台
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
             </div>
         </nav>
 
     </div>
 </div>
+<script>
+    var navFlag = true;
+    $(document).click(function(event){
+        if(event.target.innerText === "了解系统"&&event.target.localName ==='a'){
+            navFlag ? 
+            $('#navbar-navigation').css('display','block'):$('#navbar-navigation').css('display','none')
+            navFlag = !navFlag;
+            $('.nav-system').addClass('active-gm')
+            $('.nav-system').siblings().removeClass('active-gm')
+        }else{
+            $('#navbar-navigation').css('display','none')
+            navFlag = true;
+        }
+    })
+</script>

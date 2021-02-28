@@ -2,9 +2,9 @@
 <link href="../gm-css/information.css" rel="stylesheet">
 <link href="../gm-css/information.css" rel="stylesheet">
 <link href="../gm-css/timeline.min.css" rel="stylesheet">
-<link href="../gm-css/quill.snow.css" rel="stylesheet">
-
-<body>
+<link href="../gm-css/quill.snow.css" rel="stylesheet" rel="stylesheet">
+<link rel="stylesheet" href="../gm-css/case-detail.css">
+<body style="background-color: #fff;">
 
     <!-- 导航 -->
     <%- include('../common/nav.html'); %>
@@ -22,8 +22,15 @@
             <div class="item active">
 
                 <div class="container container-gm">
-                    <div class="col-md-10 col-md-offset-2">
-                        <img class="featurette-image  " src="../gm-images/information/header.png">
+                    <div class="col-md-10 ">
+                        <div class="case-detail-header">
+                            <div class="case-detail-hTitle">
+                                <div class="case-detail-hTitle-top">合作案例</div>
+                                <div class="case-detail-hTitle-bottom">COOPERATION</div>
+                            </div>
+                            <img class="case-detail-hTitle-image  " src="../gm-images/case-detail/header.png">
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -38,24 +45,24 @@
 
     <div class="container information">
         <% if (detail) { %>
-        <div class="row">
-            <div class="col-md-2" role="complementary">
-                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+        <div class="row ">
+            <div class="col-md-1" role="complementary">
+                <!-- <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
                     <ul class="nav bs-docs-sidenav menulist">
                         <li class='active'>
                             <a href="javascript:;">详情</a>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
-            <div class="col-md-10 " role="main" id="information_content">
+            <div class="col-md-8 new-article-position" role="main" id="information_content">
                 <ul class="breadcrumb">
                     <li><a href="/case">合作案例</a></li>
-                    <li class="active">详情</li>
+                    <li class="active">鲜食快线</li>
                 </ul>
-                <div class="row">
+                <div class="row case-detail-border">
                     <!-- 资讯内容 -->
-                    <div class="detail">
+                    <div class="detail case-detail">
                         <p class="title"><%=detail.title %></p>
                         <p class="tips">
                             <span>发表时间： <%=detail.create_time %></span>
@@ -71,7 +78,7 @@
                         </div>
                     </div>
                     <!-- 提交联系信息 -->
-                    <div class="message">
+                    <div class="message case-detail">
                         <p class="message_title">请留下您的联系方式，我们会尽快与您联系</p>
                         <div class="postUserinfo">
                             <div class="col-md-4 qr_left">
@@ -97,9 +104,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="line "></div>
+                    <div class="line case-detail"></div>
                     <!-- 分享 -->
-                    <div class="information_other">
+                    <div class="information_other case-detail">
                         <% if(list.length>0){%>
                         <p><a href="/information_detail/<%=list[0]['id']%>">下一个：<%=list[0]['title']%></a></p>
                         <% }%>
@@ -124,7 +131,7 @@
                     </div>
                     <!-- 相关资讯 -->
                     <% if(list.length>0){%>
-                    <div class="other" id="information">
+                    <div class="other case-detail" id="information">
                         <p class="banner">相关资讯</p>
                         <div class="other_list">
                             <% list.forEach(function(item){%>
@@ -139,12 +146,12 @@
                     </div>
                     <% }%>
                     <!-- 评论 -->
-                    <div class="comment" id="comment">
+                    <div class="comment case-detail" id="comment">
                         <p class="banner">评论</p>
                         <div class="comment_cont">
                             <form class="form-horizontal">
                                 <div class="form-group">
-                                    <label for="nickname" class="col-md-1 control-label">昵称</label>
+                                    <label for="nickname" class="col-md-1 control-label" style="padding: 7px 0 0 0;">昵称</label>
                                     <div class="col-md-11">
                                         <input type="text" class="form-control" id="nickname">
                                     </div>
@@ -161,7 +168,73 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 右侧区域 -->
+                <div class="new-article-outer">
+                    <!-- 最新文章区域 -->
+
+                    <div class="new-article">
+                            <div class="new-article-padding">
+                                <div class="new-articl-header">最新文章</div>
+                                <ul>
+                                    <li>
+                                        <p>文章名字</p>
+                                        <div>
+                                            <span>2020-12-12 12:12:12</span>
+                                            <span>518已阅读</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>文章名字</p>
+                                        <div>
+                                            <span>2020-12-12 12:12:12</span>
+                                            <span>518已阅读</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>文章名字</p>
+                                        <div>
+                                            <span>2020-12-12 12:12:12</span>
+                                            <span>518已阅读</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>文章名字</p>
+                                        <div>
+                                            <span>2020-12-12 12:12:12</span>
+                                            <span>518已阅读</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>文章名字</p>
+                                        <div>
+                                            <span>2020-12-12 12:12:12</span>
+                                            <span>518已阅读</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="new-article-footer"><a href="/case"></a> 阅读更多内容，狠戳这里</div>
+                    </div>
+                    
+                    <div class="many-view new-article">
+                        <p class="next">下一篇</p>
+                        <a href="">
+                        <p class="name">初夏</p>
+                        <div>
+                            摘要：让他给你静态v拥抱你厨房更不好法规和健康法规和健康法规和健康让他与让他给你静态拥抱你厨房更不好法规和健康法规和健康他与让他给你静态拥抱你厨房更不好法规和健康法规和健康                        
+                        </div>
+                        <div>
+                            <span>2020-12-12 12:12:12</span>
+                            <span>518已阅读</span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
             </div>
+
+
+            <div class="col-md-3"></div>
         </div>
         <% }%>
     </div><!-- /.container -->
