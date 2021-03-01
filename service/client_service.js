@@ -257,8 +257,15 @@ app.get('/charge',function (req, res) {
 //中央厨房
 app.get('/kitchen',function (req, res) {
 	data.title = "观麦科技-中央厨房";
-	data.gm_active = "kitchen";
+    data.gm_active = "kitchen";
     res.render('src/kitchen',data)
+});
+
+//配送系统
+app.get('/delivery',function (req, res) {
+	data.title = "观麦科技-配送系统";
+    data.gm_active = "delivery";
+    res.render('src/delivery',data)
 });
 
 
@@ -272,7 +279,7 @@ app.get('/open-platform',function (req, res) {
 //新零售
 app.get('/retail',function (req, res) {
 	data.title = "观麦科技-新零售";
-	data.gm_active = "retail";
+    data.gm_active = "retail";
     res.render('src/retail',data)
 });
 

@@ -1,381 +1,426 @@
-.charge-module-title{
-    text-align: center; 
+.charge-module-title {
+  text-align: center;
 }
-.charge-module-title-h{
-    margin-top: 60px;
+.charge-module-title-h {
+  margin-top: 60px;
 }
-.charge-module-title-h>h1{
-    margin: 0;
-    font-size: 32px;
-    font-weight: bold; 
-    color: #3B426B;
+.charge-module-title-h > h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: bold;
+  color: #3b426b;
 }
-.charge-module-title-p>p{
-    margin: 0;
-    margin-top: 18px;
-    font-size: 18px;
-    font-family: Hiragino Sans GB;
-    font-weight: normal;
-    color: #93949D;
-}
-
-#ChargeBanner{
-    margin-top: 60px;
-    background: url(../gm-images/charge/组\ 2@2x.png) no-repeat center top;
-
-    height: 520px;
-}
-#ChargeBanner  .banner-text{
-    text-align: center;
-    font-weight: 200;
-    margin-top: 135px;
-
-    font-size: 52px;
-    font-family: PingFang;
-    font-weight: bold;
-    color: #353535;
-}
-#ChargeBanner .banner-btn{
-    display: block;
-    margin: auto;
-    margin-top: 48px;
-    width: 193px;
-    height: 57px;
-    background: #105CFB;
-    border-radius: 20px;
-    
-    font-size: 21px;
-    font-weight: 500;
-    color: #FFFFFF;
+.charge-module-title-p > p {
+  margin: 0;
+  margin-top: 18px;
+  font-size: 18px;
+  font-family: Hiragino Sans GB;
+  font-weight: normal;
+  color: #93949d;
 }
 
+#ChargeBanner {
+  margin-top: 60px;
+  background: url(../gm-images/charge/组\ 2@2x.png) no-repeat center top;
+  height: 520px;
+}
+#ChargeBanner .banner-text {
+  text-align: center;
+  font-weight: 200;
+  margin-top: 135px;
+  font-size: 40px;
+  font-family: PingFang;
+  font-weight: bold;
+  color: #353535;
+}
+#ChargeBanner .banner-btn {
+  display: block;
+  margin: auto;
+  margin-top: 48px;
+  width: 193px;
+  height: 57px;
+  background: #105cfb;
+  border-radius: 20px;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
 
 @media (min-width: 768px) {
-    #ChargeList{
-        margin-top: -140px;
-    }
+  #ChargeList {
+    margin-top: -140px;
+  }
 }
 
-#ChargeList .charge-list-item{
-    width: 100%;
-    min-height: 354px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 18px 0px #E3E5E8;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-bottom: 52px;
+#ChargeList .charge-list-item {
+  width: 100%;
+  min-height: 354px;
+  background: #ffffff;
+  box-shadow: 0px 0px 18px 0px #e3e5e8;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 52px;
 }
-#ChargeList .charge-list-item .item-header{
-    height: 70px;
-    line-height: 70px;
-    text-align: center;
-    
-    font-size: 24px;
-    font-family: PingFang;
-    font-weight: 500;
-    color: #FFFFFF;
-}
-#ChargeList .charge-list-item-1 .item-header{
+#ChargeList .charge-list-item .item-header {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
 
-    background: -moz-linear-gradient(right, #3EA6FF 0%, #3961F4 100%);
-    background: -webkit-gradient(linear, left right, left right, color-stop(0%,#3EA6FF), color-stop(100%,#3961F4));
-    background: -webkit-linear-gradient(right, #3EA6FF 0%,#3961F4 100%);
-    background: -o-linear-gradient(right, #3EA6FF 0%,#3961F4 100%);
-    background: -ms-linear-gradient(right, #3EA6FF 0%,#3961F4 100%);
-    background: linear-gradient(to right, #3EA6FF 0%,#3961F4 100%);
+  font-size: 26px;
+  font-family: PingFang;
+  font-weight: 500;
+  color: #ffffff;
 }
-#ChargeList .charge-list-item-2 .item-header{
-
-    background: -moz-linear-gradient(right, #F0C978 0%, #D5A35F 100%);
-    background: -webkit-gradient(linear, left right, left right, color-stop(0%,#D5A35F), color-stop(100%,#D5A35F));
-    background: -webkit-linear-gradient(right, #F0C978 0%,#D5A35F 100%);
-    background: -o-linear-gradient(right, #F0C978 0%,#D5A35F 100%);
-    background: -ms-linear-gradient(right, #F0C978 0%,#D5A35F 100%);
-    background: linear-gradient(to right, #F0C978 0%,#D5A35F 100%);
+#ChargeList .charge-list-item-1 .item-header {
+  background: -moz-linear-gradient(right, #3ea6ff 0%, #3961f4 100%);
+  background: -webkit-gradient(
+    linear,
+    left right,
+    left right,
+    color-stop(0%, #3ea6ff),
+    color-stop(100%, #3961f4)
+  );
+  background: -webkit-linear-gradient(right, #3ea6ff 0%, #3961f4 100%);
+  background: -o-linear-gradient(right, #3ea6ff 0%, #3961f4 100%);
+  background: -ms-linear-gradient(right, #3ea6ff 0%, #3961f4 100%);
+  background: linear-gradient(to right, #3ea6ff 0%, #3961f4 100%);
 }
-#ChargeList .charge-list-item-3 .item-header{
-
-    background: -moz-linear-gradient(right, #31DFD0 0%, #3961F4 100%);
-    background: -webkit-gradient(linear, left right, left right, color-stop(0%,#31DFD0), color-stop(100%,#3961F4));
-    background: -webkit-linear-gradient(right, #31DFD0 0%,#3961F4 100%);
-    background: -o-linear-gradient(right, #31DFD0 0%,#3961F4 100%);
-    background: -ms-linear-gradient(right, #31DFD0 0%,#3961F4 100%);
-    background: linear-gradient(to right, #31DFD0 0%,#3961F4 100%);
+#ChargeList .charge-list-item-2 .item-header {
+  background: -moz-linear-gradient(right, #f0c978 0%, #d5a35f 100%);
+  background: -webkit-gradient(
+    linear,
+    left right,
+    left right,
+    color-stop(0%, #d5a35f),
+    color-stop(100%, #d5a35f)
+  );
+  background: -webkit-linear-gradient(right, #f0c978 0%, #d5a35f 100%);
+  background: -o-linear-gradient(right, #f0c978 0%, #d5a35f 100%);
+  background: -ms-linear-gradient(right, #f0c978 0%, #d5a35f 100%);
+  background: linear-gradient(to right, #f0c978 0%, #d5a35f 100%);
 }
-#ChargeList .charge-list-item-4 .item-header{
-
-    background: -moz-linear-gradient(right, #DDB799 0%, #B88564 100%);
-    background: -webkit-gradient(linear, left right, left right, color-stop(0%,#DDB799), color-stop(100%,#B88564));
-    background: -webkit-linear-gradient(right, #DDB799 0%,#B88564 100%);
-    background: -o-linear-gradient(right, #DDB799 0%,#B88564 100%);
-    background: -ms-linear-gradient(right, #DDB799 0%,#B88564 100%);
-    background: linear-gradient(to right, #DDB799 0%,#B88564 100%);
+#ChargeList .charge-list-item-3 .item-header {
+  background: -moz-linear-gradient(right, #31dfd0 0%, #3961f4 100%);
+  background: -webkit-gradient(
+    linear,
+    left right,
+    left right,
+    color-stop(0%, #31dfd0),
+    color-stop(100%, #3961f4)
+  );
+  background: -webkit-linear-gradient(right, #31dfd0 0%, #3961f4 100%);
+  background: -o-linear-gradient(right, #31dfd0 0%, #3961f4 100%);
+  background: -ms-linear-gradient(right, #31dfd0 0%, #3961f4 100%);
+  background: linear-gradient(to right, #31dfd0 0%, #3961f4 100%);
 }
-
-#ChargeList .charge-list-item .item-intro{
-    margin-top: 26px;
-    text-align: center;
-    font-size: 16px;
-    font-family: PingFang;
-    font-weight: 500;
-    color: #9D9D9D;
-    line-height: 24px;
-}
-
-
-
-
-#ChargeList .charge-list-item .item-price{
-    display: flex; 
-    justify-content:  space-around; 
-    align-items: center;
-    margin-top: 70px;
-}
-#ChargeList .charge-list-item .item-price .item-price-part{
-    font-size: 16px;
-}
-#ChargeList .charge-list-item .item-price .item-price-part>div:nth-child(1){
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-}
-#ChargeList .charge-list-item .item-price .item-price-part>div:nth-child(2)>span:nth-child(2){
-    font-size: 28px;
-    font-weight: 500;
-}
-#ChargeList .charge-list-item .item-price .item-price-part>div:nth-child(2)>span:last-child{
-    color: #000;
-    font-weight: 500;
+#ChargeList .charge-list-item-4 .item-header {
+  background: -moz-linear-gradient(right, #ddb799 0%, #b88564 100%);
+  background: -webkit-gradient(
+    linear,
+    left right,
+    left right,
+    color-stop(0%, #ddb799),
+    color-stop(100%, #b88564)
+  );
+  background: -webkit-linear-gradient(right, #ddb799 0%, #b88564 100%);
+  background: -o-linear-gradient(right, #ddb799 0%, #b88564 100%);
+  background: -ms-linear-gradient(right, #ddb799 0%, #b88564 100%);
+  background: linear-gradient(to right, #ddb799 0%, #b88564 100%);
 }
 
-
-
-#ChargeList .charge-list-item .item-price .item-price-part:nth-child(2){
-    width: 1px;
-    height: 60px;
-    background-color: #E3E5E8;
-    
-    transform:rotate(10deg);
-    -ms-transform:rotate(10deg);        /* IE 9 */
-    -moz-transform:rotate(10deg);    /* Firefox */
-    -webkit-transform:rotate(10deg);    /* Safari and Chrome */
-    -o-transform:rotate(10deg);        /* Opera */
+#ChargeList .charge-list-item .item-intro {
+  margin-top: 26px;
+  text-align: center;
+  font-size: 16px;
+  font-family: PingFang;
+  font-weight: 500;
+  color: #9d9d9d;
+  line-height: 24px;
 }
 
-
-
-
-#ChargeList .charge-list-item-1 .item-price{
-    color: #3DA4FF;
+#ChargeList .charge-list-item .item-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+}
+#ChargeList .charge-list-item .item-price .item-price-part {
+  font-size: 16px;
+}
+#ChargeList .charge-list-item .item-price .item-price-part > div:nth-child(1) {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+#ChargeList
+  .charge-list-item
+  .item-price
+  .item-price-part
+  > div:nth-child(2)
+  > span:nth-child(2) {
+  font-size: 24px;
+  font-weight: 500;
+}
+#ChargeList
+  .charge-list-item
+  .item-price
+  .item-price-part
+  > div:nth-child(2)
+  > span:last-child {
+  color: #000;
+  font-weight: 500;
 }
 
-#ChargeList .charge-list-item-2 .item-price{
-    color:#D7A663;
+#ChargeList .charge-list-item .item-price .item-price-part:nth-child(2) {
+  width: 1px;
+  height: 60px;
+  background-color: #e3e5e8;
+
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -moz-transform: rotate(10deg); /* Firefox */
+  -webkit-transform: rotate(10deg); /* Safari and Chrome */
+  -o-transform: rotate(10deg); /* Opera */
 }
 
-#ChargeList .charge-list-item-3 .item-price{
-    color: #105CFB;
+#ChargeList .charge-list-item-1 .item-price {
+  color: #3da4ff;
 }
 
-#ChargeList .charge-list-item-4 .item-price{
-    color: #B98666;
+#ChargeList .charge-list-item-2 .item-price {
+  color: #d7a663;
 }
 
-
-#ChargeList .charge-list-item::after{
-    display: block;
-    content: '';
-    visibility: hidden;
-}
-#ChargeList .charge-list-item .item-button{
-    margin-top: 28px;
-    margin-bottom: 24px;
-}
-#ChargeList .charge-list-item .item-button>button{
-    display: block;
-    margin: auto;
-    width: 135px;
-    height: 40px;
-    border-radius: 20px;
-}
-#ChargeList .charge-list-item-1 .item-button>button{
-    background-color:#3DA4FF;
-    border-color: #3DA4FF;
-}
-#ChargeList .charge-list-item-2 .item-button>button{
-    background-color: #D7A663;
-    border-color: #D7A663;
-}
-#ChargeList .charge-list-item-3 .item-button>button{
-    background-color:#2D74F1;
-    border-color: #2D74F1;
-}
-#ChargeList .charge-list-item-4 .item-button>button{
-    background-color: #B98666;
-    border-color: #B98666;
+#ChargeList .charge-list-item-3 .item-price {
+  color: #105cfb;
 }
 
-.price-detail-item{
-    width: 90%; margin: 10px auto;
-    background: #F9FAFF; text-align: center;
-    padding: 10px 20px;
-    color: #436BF5;
-}
-.price-detail-item .price-number{
-    font-weight: 500;
-    font-size: 20px;
+#ChargeList .charge-list-item-4 .item-price {
+  color: #b98666;
 }
 
-.pricing-img{
-    width: 86px; height: 86px; display: block; margin: 0px auto;
+#ChargeList .charge-list-item::after {
+  display: block;
+  content: "";
+  visibility: hidden;
 }
-.pricing-txt{
-    text-align: center;
+#ChargeList .charge-list-item .item-button {
+  margin-top: 28px;
+  margin-bottom: 24px;
 }
-#IncrApplication .outer-box{
-    border: solid 2px ;
-    /*height: 432px;*/
-    background: rgba(66, 106, 245, 0.06);
-    border: 2px solid #4068F5;
-    height: 580px; box-sizing: border-box;
+#ChargeList .charge-list-item .item-button > button {
+  display: block;
+  margin: auto;
+  width: 135px;
+  height: 40px;
+  border-radius: 20px;
 }
-#IncrApplication .outer-box h2{
-    text-align: center;
-    height: 32px;
-    width: 200px;
-    margin: auto;
-    margin-top: -16px ;
-    margin-bottom: 14px;
-    line-height: 32px;
-    border-radius: 4px;
-    font-size: 21px;
-    font-weight: 500;
-    color: #FFFFFF;
-
-    background: -moz-linear-gradient(90deg, #5F87F8 0%, #3860F4 100%);
-    background: -webkit-gradient(linear, left right, left right, color-stop(0%,#5F87F8), color-stop(100%,#3860F4));
-    background: -webkit-linear-gradient(90deg, #5F87F8 0%,#3860F4 100%);
-    background: -o-linear-gradient(90deg, #5F87F8 0%,#3860F4 100%);
-    background: -ms-linear-gradient(90deg, #5F87F8 0%,#3860F4 100%);
-    background: linear-gradient(90deg, #5F87F8, #3860F4);
+#ChargeList .charge-list-item-1 .item-button > button {
+  background-color: #3da4ff;
+  border-color: #3da4ff;
+  font-size: 18px;
 }
-#IncrApplication .outer-box .inner-box{
-    margin:0 24px 24px 24px;
-    padding: 8px 0px;
-    background: #fff; box-sizing: border-box;
+#ChargeList .charge-list-item-2 .item-button > button {
+  background-color: #d7a663;
+  border-color: #d7a663;
+  font-size: 18px;
 }
-#IncrApplication ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+#ChargeList .charge-list-item-3 .item-button > button {
+  background-color: #2d74f1;
+  border-color: #2d74f1;
+  font-size: 18px;
 }
-#IncrApplication ul li{
-    margin-top: 38px;
-    margin-bottom: 16px;
-}
-#IncrApplication ul li span{
-    display: block;
-    /*height:60px;*/
-    text-align: center;
-}
-#IncrApplication ul li span:first-child>img{
-    height:86px;
-    position: relative;
-    left: -6px;
-}
-#IncrApplication ul li span:last-child{
-    display: block;
-    height: auto;
-}
-#IncrApplication ul{
-    display: flex;
-    justify-content:  space-around; 
-    align-items: center;
-    flex-wrap: wrap;
+#ChargeList .charge-list-item-4 .item-button > button {
+  background-color: #b98666;
+  border-color: #b98666;
+  font-size: 18px;
 }
 
-
-#IncrApplication .outer-box-row-3 .outer-box{
-    height: auto;
-    margin-bottom: 20px;
+.price-detail-item {
+  width: 90%;
+  margin: 10px auto;
+  background: #f9faff;
+  text-align: center;
+  padding: 10px 20px;
+  color: #436bf5;
+  font-size: 18px;
 }
-#IncrApplication .outer-box-row-3 .outer-box h2{
-    width: 180px;
-}
-
-#IncrApplication .outer-box-row-1{
-    width: 390px;
-}
-#IncrApplication .outer-box-row-1 ul li{
-    width: 50%;
+.price-detail-item .price-number {
+  font-weight: 500;
+  font-size: 20px;
 }
 
+.pricing-img {
+  width: 86px;
+  height: 86px;
+  display: block;
+  margin: 0px auto;
+}
+.pricing-txt {
+  text-align: center;
+}
+#IncrApplication .outer-box {
+  border: solid 2px;
+  /*height: 432px;*/
+  background: rgba(66, 106, 245, 0.06);
+  border: 2px solid #4068f5;
+  height: 580px;
+  box-sizing: border-box;
+}
+#IncrApplication .outer-box h2 {
+  text-align: center;
+  height: 32px;
+  width: 200px;
+  margin: auto;
+  margin-top: -16px;
+  margin-bottom: 14px;
+  line-height: 32px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
 
-
-.detail-row{
-    display: flex; justify-content: space-between;
-    flex-wrap: wrap;
+  background: -moz-linear-gradient(90deg, #5f87f8 0%, #3860f4 100%);
+  background: -webkit-gradient(
+    linear,
+    left right,
+    left right,
+    color-stop(0%, #5f87f8),
+    color-stop(100%, #3860f4)
+  );
+  background: -webkit-linear-gradient(90deg, #5f87f8 0%, #3860f4 100%);
+  background: -o-linear-gradient(90deg, #5f87f8 0%, #3860f4 100%);
+  background: -ms-linear-gradient(90deg, #5f87f8 0%, #3860f4 100%);
+  background: linear-gradient(90deg, #5f87f8, #3860f4);
+}
+#IncrApplication .outer-box .inner-box {
+  margin: 0 24px 24px 24px;
+  padding: 8px 0px;
+  background: #fff;
+  box-sizing: border-box;
+}
+#IncrApplication ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#IncrApplication ul li {
+  margin-top: 38px;
+  margin-bottom: 16px;
+}
+#IncrApplication ul li span {
+  display: block;
+  /*height:60px;*/
+  text-align: center;
+}
+#IncrApplication ul li span:first-child > img {
+  height: 86px;
+  position: relative;
+  left: -6px;
+}
+#IncrApplication ul li span:last-child {
+  display: block;
+  height: auto;
+  font-size: 18px;
+}
+#IncrApplication ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.detail-price-box{
-    width: 30%; box-sizing: border-box;
+#IncrApplication .outer-box-row-3 .outer-box {
+  height: auto;
+  margin-bottom: 20px;
 }
-.d-header-tags{
-    width: 100%;
-    display: flex; justify-content: flex-start;
-    align-items: flex-end;
-}
-
-.tags-btn{
-    font-size: 16px; 
-    box-sizing: border-box; 
-    border-radius: 4px; margin-right: 10px;
-    padding: 0px 3px;
-}
-.big{
-    height: 30px; line-height: 30px;
-    padding: 0px 5px;
-}
-.small{
-    font-size: 14px;
-    box-sizing: border-box;  
-    border: 1px solid #7279A0;
-    border-radius: 4px;  height: 21px; line-height: 21px;
-
-} 
-.big-blue-tags{
-    background: #3B6BF9; color: white;
-}
-.big-green-tags{
-    background: #4DB848; color: white;
+#IncrApplication .outer-box-row-3 .outer-box h2 {
+  width: 180px;
 }
 
-.small-gray-tags{
-    background: none; color: #7279A0; 
+#IncrApplication .outer-box-row-1 {
+  width: 390px;
 }
-.small-green-tags{
-    background: none; color: #4DB848;
-    border: 1px solid #4DB848;
-}
-
-
-.d-desc-box{
-    width: 100%; box-sizing: border-box;
-    border: 1px solid #E3E3E3;
-    border-radius: 2px;  padding: 20px 20px;
-    margin: 15px 0px 30px 0px; height: 207px;  color: #323231;
-    font-size: 15px;  display: flex; align-items: center;
-    line-height: 25px;
-}
-.bt-warp{
-    width: 100%;
-    height: 482px; 
-    background: url(../gm-images/charge/bt-bg.png);
-    background-size: cover; display: flex; align-items: center;
+#IncrApplication .outer-box-row-1 ul li {
+  width: 50%;
 }
 
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+.detail-price-box {
+  width: 30%;
+  box-sizing: border-box;
+}
+.d-header-tags {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
 
+.tags-btn {
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 0px 3px;
+}
+.big {
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 5px;
+}
+.small {
+  font-size: 12px;
+  box-sizing: border-box;
+  border: 1px solid #7279a0;
+  border-radius: 4px;
+  height: 21px;
+  line-height: 21px;
+}
+.big-blue-tags {
+  background: #3b6bf9;
+  color: white;
+}
+.big-green-tags {
+  background: #4db848;
+  color: white;
+}
 
+.small-gray-tags {
+  background: none;
+  color: #7279a0;
+}
+.small-green-tags {
+  background: none;
+  color: #4db848;
+  border: 1px solid #4db848;
+}
 
-
+.d-desc-box {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e3e3e3;
+  border-radius: 2px;
+  padding: 20px 20px;
+  margin: 15px 0px 30px 0px;
+  height: 207px;
+  color: #323231;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  line-height: 25px;
+}
+.bt-warp {
+  width: 100%;
+  height: 482px;
+  background: url(../gm-images/charge/bt-bg.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}

@@ -72,3 +72,9 @@
 .fontColor-nav{
 	color: #1e273c;
 }
+.paddingMargin-none{
+    padding: 0 !important;
+    margin: 0 auto !important;
+    margin-top: -8px !important;
+    background-color: #fff !important;
+}
