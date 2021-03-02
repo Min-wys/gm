@@ -117,7 +117,7 @@
 .rigit-title {
   font-size: 26px;
   color: #374567;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 18px;
 }
 .rigit-title-18 {
@@ -193,6 +193,9 @@
   font-weight: 500;
   line-height: 1;
   letter-spacing: -1px;
+}
+.featurette-heading-sub{
+  font-weight: 400;
 }
 .flex-right {
   align-items: flex-end;
@@ -412,9 +415,14 @@
   margin-top: 30px;
 }
 .btn-bigger-hover:hover {
-  background: #7a8ba6 !important;
+  background: #fff !important;
   color: #3860f4 !important;
-  border-color: white !important;
+  border-color: #3860f4 !important;
+}
+.btn-scale-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 3px 8px 0px #babcc5;
+  transition: transform 1s;
 }
 
 .gm4-screen {
@@ -471,7 +479,7 @@
   object-fit: cover;
 }
 .case-item {
-	height: 361px !important;
+  height: 361px !important;
   box-shadow: 0px 3px 8px 0px #e4e6f2;
   text-align: center;
   padding: 20px 0px;
@@ -481,7 +489,7 @@
   height: 360px;
 }
 .case-item-bottom {
-	height: auto !important;
+  height: auto !important;
   box-shadow: 0px 3px 8px 0px #e4e6f2;
   text-align: center;
   padding: 20px 0px;
@@ -490,9 +498,9 @@
   margin: 0px 10px;
   height: 360px;
 }
-.case-logo-outer{
+.case-logo-outer {
   width: 135px;
-	height: 135px;
+  height: 135px;
   border: solid 1px #eaebee;
   margin: 12px auto;
   border-radius: 50%;
@@ -504,14 +512,13 @@
   /* margin: 12px auto;
   display: block; */
 }
-.case-item-bottom-logo{
+.case-item-bottom-logo {
   width: 107px;
-	height: 105px;
+  height: 105px;
   border: solid 1px #eaebee;
   overflow: hidden;
   margin: 12px auto;
   border-radius: 50%;
-
 }
 .case-title {
   color: #333333;
@@ -544,7 +551,7 @@
 }
 .btn-case {
   /* width: 70%; */
-	width: 136px;
+  width: 136px;
   height: 33px;
   line-height: 33px;
   border-color: #666;
@@ -579,6 +586,7 @@
   font-size: 34px;
   margin-bottom: 20px;
 }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -631,22 +639,150 @@
     width: 25% !important;
   }
 }
-/* 小于等于992生效 */
-/* @media (max-width: 992px) {
-  .banner-bottm {
-    height: 100px !important;
-    background-color: yellow !important;
-  }
-} */
-/* 小于1443大于1334生效 */
-/* @media (min-width: 1334px) and (max-width: 1443px) {
-  .banner-bottm {
-    height: 110px;
-  }
-} */
-/* 大于等于1443生效 */
-/* @media (min-width: 1443px) {
-  .banner-bottm {
-    height: 120px;
-  }
-} */
+
+
+/* 优势介绍模块 */
+#superiority {
+  display: flex;
+  justify-content: space-between;
+  height: 545px;
+}
+/* 优势介绍的数字 */
+.superiorityNum {
+  font-size: 62px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 33px;
+  color: #d2d2d2;
+}
+/* 优势介绍的标题 */
+.superiorityTitle {
+  font-size: 30px;
+  font-weight: 400;
+  color: #3860f4;
+}
+/* 优势介绍的0几的内容 */
+.superiorityContent {
+  font-size: 15px;
+  font-weight: normal;
+  color: #747474;
+}
+/* 数字和标题分开 */
+.superiorityTitleHeader {
+  display: flex;
+  justify-content: space-around;
+}
+/* 横线 */
+.superiorityLine {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color:#d2d2d2;
+  position: relative;
+  height: 1px;
+  width: 95%;
+}
+/* 横线的点 */
+.superiorityLine-after::after{
+  content: '';
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #d2d2d2;
+  position: absolute;
+  right: 0px;
+  top: -3px;
+}
+.superiorityLine-before::before{
+  content: '';
+  display: block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #d2d2d2;
+  position: absolute;
+  left: 0px;
+  top: -3px;
+}
+
+/* 中间的图片 */
+.topBottomCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.superiorityCenter {
+}
+.superiorityCenteImgOuter {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  border: 1px dashed #747474;
+}
+.superiorityCenteImgOuter div{
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  position: relative;
+}
+.superiorityCenteImgOuter div img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+/* 下margin */
+.bottomMargin{
+  margin-bottom: 80px;
+}
+/* 01 04 */
+.oneFour{
+  width: 285px;
+}
+/* 02 05 */
+.twoFive{
+  width: 290px;
+}
+/* 03 06 */
+.threeSix{
+  width: 250px;
+}
+.superiorityWidth{
+  width: 33.33%;
+}
+.positionDiv{
+  position: relative;
+}
+.superiorityOne{
+  position: absolute;
+  top: 35px;
+  left: 75px;
+}
+.superiorityTwo{
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+.superiorityThree{
+  position: absolute;
+  bottom: 25px;
+  left: 64px;
+}
+.superiorityFour{
+  position: absolute;
+  top: 35px;
+  right: 75px;
+}
+.superiorityFive{
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+.superioritySix{
+  position: absolute;
+  bottom: 25px;
+  right: 64px;
+}

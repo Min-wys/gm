@@ -1,80 +1,93 @@
 /* 定义公共字体的大小 */
-.font-bold-35{
-    font-size: 35px;
-    font-weight: 500;
+.font-bold-35 {
+  font-size: 35px;
+  font-weight: 500;
 }
-.font-bold-40{
-    font-size: 40px;
-    font-weight: 500;
+.font-bold-40 {
+  font-size: 40px;
+  font-weight: 500;
 }
-.font-bold-30{
-    font-size: 30px;
-    font-weight: 500;
+.font-bold-30 {
+  font-size: 30px;
+  font-weight: 500;
 }
-.font-regular-17{
-    font-size: 17px;
-    font-weight: 400;
+.font-regular-17 {
+  font-size: 17px;
+  font-weight: 400;
 }
-.font-regular-18{
-    font-size: 18px;
-    font-weight: 400;
+.font-regular-18 {
+  font-size: 18px;
+  font-weight: 400;
 }
-.font-regular-16{
-    font-size: 16px;
-    font-weight: 400;
+.font-regular-16 {
+  font-size: 16px;
+  font-weight: 400;
 }
-.font-light-16{
-    font-size: 18px;
-    font-weight: 300;
+.font-light-16 {
+  font-size: 18px;
+  font-weight: 300;
 }
-.font-regular-15{
-    font-size: 15px;
-    font-weight: 400;
+.font-regular-15 {
+  font-size: 15px;
+  font-weight: 400;
 }
-.font-light-14{
-    font-size: 14px;
-    font-weight: 300;
+.font-light-14 {
+  font-size: 14px;
+  font-weight: 300;
 }
-.font-light-64{
-    font-size: 53px;
-    font-weight: 300;
+.font-light-64 {
+  font-size: 53px;
+  font-weight: 300;
 }
-.font-regular-12{
-    font-size: 30px;
-    font-weight: 400;
+.font-regular-12 {
+  font-size: 30px;
+  font-weight: 400;
 }
-.font-regular-27{
-    font-size: 27px !important;
-    font-weight: 400;
+.font-regular-27 {
+  font-size: 27px !important;
+  font-weight: 400;
 }
 /* 字体颜色 */
-.fontColor-tint-black{
-    color: #3b426b;
+.fontColor-tint-black {
+  color: #3b426b;
 }
-.fontColor-dark-black{
-    color: #7a8ba6;
+.fontColor-dark-black {
+  color: #7a8ba6;
 }
-.fontColor-white{
-    color: #fff;
+.fontColor-white {
+  color: #fff;
 }
-.fontColor-tint-white{
-    color: #d7e1ff;
+.fontColor-tint-white {
+  color: #d7e1ff;
 }
-.margin-auto{
-    margin: 0 auto;
+.margin-auto {
+  margin: 0 auto;
 }
-.title-style{
-    color: #93949d;
-    font-size: 18px;
-    font-weight: 400;
-    padding-top: 5px;
+.title-style {
+  color: #93949d;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 5px;
 }
-.fontColor-nav{
-	color: #1e273c;
+.fontColor-nav {
+  color: #1e273c;
 }
-.paddingMargin-none{
-    padding: 0 !important;
-    margin: 0 auto !important;
-    margin-top: -8px !important;
-    background-color: #fff !important;
+.paddingMargin-none {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  margin-top: -8px !important;
+  background-color: #fff !important;
 }
+.featurette-heading-family-bold {
+  font-family: "PingFang-SC-Bold" !important;
+}
+.featurette-heading-family-light {
+  font-family: "PingFang-SC-Light" !important;
+}
+.featurette-heading-family-regular {
+  font-family: "PingFang-SC-Regular" !important;
+}
+.featurette-heading-family-Medium {
+  font-family: "PingFang-SC-Medium" !important;
+}
+
