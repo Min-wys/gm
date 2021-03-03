@@ -194,7 +194,7 @@
   line-height: 1;
   letter-spacing: -1px;
 }
-.featurette-heading-sub{
+.featurette-heading-sub {
   font-weight: 400;
 }
 .flex-right {
@@ -640,7 +640,6 @@
   }
 }
 
-
 /* 优势介绍模块 */
 #superiority {
   display: flex;
@@ -676,14 +675,14 @@
 .superiorityLine {
   margin-top: 10px;
   margin-bottom: 15px;
-  background-color:#d2d2d2;
+  background-color: #d2d2d2;
   position: relative;
   height: 1px;
   width: 95%;
 }
 /* 横线的点 */
-.superiorityLine-after::after{
-  content: '';
+.superiorityLine-after::after {
+  content: "";
   display: block;
   height: 7px;
   width: 7px;
@@ -693,8 +692,8 @@
   right: 0px;
   top: -3px;
 }
-.superiorityLine-before::before{
-  content: '';
+.superiorityLine-before::before {
+  content: "";
   display: block;
   height: 7px;
   width: 7px;
@@ -706,7 +705,7 @@
 }
 
 /* 中间的图片 */
-.topBottomCenter{
+.topBottomCenter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -717,15 +716,15 @@
   width: 360px;
   height: 360px;
   border-radius: 50%;
-  border: 1px dashed #747474;
+  border: 1px dashed #b2b2b2;
 }
-.superiorityCenteImgOuter div{
+.superiorityCenteImgOuter div {
   width: 95%;
   height: 95%;
   border-radius: 50%;
   position: relative;
 }
-.superiorityCenteImgOuter div img{
+.superiorityCenteImgOuter div img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -735,54 +734,354 @@
   left: 0px;
 }
 /* 下margin */
-.bottomMargin{
+.bottomMargin {
   margin-bottom: 80px;
 }
 /* 01 04 */
-.oneFour{
+.oneFour {
   width: 285px;
 }
 /* 02 05 */
-.twoFive{
+.twoFive {
   width: 290px;
 }
 /* 03 06 */
-.threeSix{
+.threeSix {
   width: 250px;
 }
-.superiorityWidth{
+.superiorityWidth {
   width: 33.33%;
 }
-.positionDiv{
+.positionDiv {
   position: relative;
 }
-.superiorityOne{
+.superiorityOne {
   position: absolute;
-  top: 35px;
+  top: 55px;
   left: 75px;
 }
-.superiorityTwo{
+.superiorityTwo {
   position: absolute;
   left: 0;
-  top: 200px;
+  top: 210px;
 }
-.superiorityThree{
+.superiorityThree {
   position: absolute;
   bottom: 25px;
   left: 64px;
 }
-.superiorityFour{
+.superiorityFour {
   position: absolute;
-  top: 35px;
+  top: 55px;
   right: 75px;
 }
-.superiorityFive{
+.superiorityFive {
   position: absolute;
-  top: 200px;
+  top: 210px;
   right: 0;
 }
-.superioritySix{
+.superioritySix {
   position: absolute;
   bottom: 25px;
   right: 64px;
+}
+
+/* 01斜线 */
+.slashLineOne {
+  height: 1px;
+  width: 11%;
+  background-color: #d2d2d2;
+  position: absolute;
+  top: 68px;
+  left: 95%;
+  transform: skewY(45deg);
+  /* animation:slashLineOneChange .3s .3s 1 both; */
+}
+.slashLineOneInner {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* 01直线 */
+.straightLineOne {
+  position: absolute;
+  /* width: 73px; */
+  width: 26%;
+  height: 1px;
+  background-color: #d2d2d2;
+  top: 83px;
+  left: calc(95% + 30px);
+  /* animation:straightLineOneChange .3s 1 both; */
+}
+.straightLineOneInner {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* 左侧的中间直线 */
+.superiorityLineLeft {
+  height: 1px;
+  background-color: #fff;
+}
+@keyframes superiorityChange {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
+/* 02 */
+.straightLineTwo {
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  background-color: #d2d2d2;
+  top: 52px;
+  left: 95%;
+}
+.straightLineTwoInner {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* 03 */
+/* 斜线 */
+.slashLineThree {
+  height: 1px;
+  width: 11%;
+  background-color: #d2d2d2;
+  position: absolute;
+  top: 35px;
+  left: 95%;
+  transform: skewY(-45deg);
+}
+.slashLineThreeInner {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* 直线 */
+.straightLineThree {
+  position: absolute;
+  width: 21%;
+  height: 1px;
+  background-color: #d2d2d2;
+  top: 17px;
+  right: -85px;
+}
+.straightLineThreeInner {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+/* 右边的动画 */
+@keyframes straightLineFourChange {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 21%;
+  }
+}
+/* 04 */
+/* 直线 */
+.straightLineFour {
+  position: absolute;
+  width: 21%;
+  height: 1px;
+  background-color: #d2d2d2;
+  bottom: 35px;
+  left: -91px;
+}
+@keyframes slashLineFourChange {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* 斜线 */
+.slashLineFour {
+  height: 1px;
+  width: 11%;
+  /* background-color: #d2d2d2; */
+  position: absolute;
+  top: 68px;
+  left: -11%;
+  transform: skewY(-45deg);
+}
+.slashLineFourInner {
+  height: 100%;
+  width: 100%;
+  background-color: #d2d2d2;
+}
+/* 右边中间的直线 */
+@keyframes superiorityLineRightChange {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+/* 05 */
+.straightLineFive {
+  position: absolute;
+  width: 35%;
+  height: 1px;
+  background-color: #d2d2d2;
+  top: 52px;
+  /* right: 100%; */
+  left: -35%;
+}
+@keyframes straightLineFiveChange {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 35%;
+  }
+}
+/* 06 直线*/
+.straightLineSix {
+  position: absolute;
+  width: 16%;
+  height: 1px;
+  background-color: #d2d2d2;
+  top: 17px;
+  left: -85px;
+}
+@keyframes straightLineSixChange {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 16%;
+  }
+}
+/* 斜线 */
+.slashLineSix {
+  height: 1px;
+  width: 11%;
+  /* background-color: #d2d2d2; */
+  position: absolute;
+  top: 35px;
+  right: 100%;
+  transform: skewY(45deg);
+}
+.slashLineSixInner {
+  height: 100%;
+  width: 100%;
+  background-color: #d2d2d2;
+}
+.container1 {
+  width: 80%;
+  margin: 0 auto;
+}
+/* 生鲜推荐 */
+#freshClassBlue {
+  width: 100%;
+  height: 110px;
+  position: relative;
+  background-color: rgb(30, 79, 223);
+}
+.btn-freshClassBlue {
+  position: absolute;
+  top: 50%;
+  left: 78%;
+  transform: translateY(-50%);
+}
+.freshClassUl {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  list-style-type: none;
+  width: 100%;
+  height: 838px;
+  background-color: #ffffff;
+  border: solid 1px #efefef;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.freshClassUl li {
+  width: 43%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  height: 137px;
+}
+.freshClassImg {
+  width: 184px;
+  height: 121px;
+  overflow: hidden;
+  /* height: 20%; */
+}
+.freshClassImg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.freshClassRight {
+  display: flex;
+  flex-direction: column;
+  width: 233px;
+}
+.freshClassRightTitle {
+  font-family: PingFang-SC-Bold;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #374567;
+}
+.freshClassRightFont {
+  font-family: PingFang-SC-Medium;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #7a8ba6;
+}
+.freshClassRightDate {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+}
+.freshClassRightCon {
+  height: 60px;
+  display: -webkit-box;
+  /* 文本行排列方向 */
+  -webkit-box-orient: vertical;
+  /* 设置几行之后出现溢出省略号 */
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.manyBtn {
+  display: block;
+  width: 323px;
+  height: 52px;
+  line-height: 52px;
+  background-color: #4069f3;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 53px;
+  margin-bottom: 33px;
+  font-family: PingFang-SC-Medium;
+  font-size: 29px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+}
+.manyBtn:hover {
+  background-color: #fff;
+  color: #4069f3;
+  border: 1px solid #4069f3;
 }
