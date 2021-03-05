@@ -96,10 +96,11 @@ app.get('/contact_us',function (req, res) {
         if(err){
             http.send(res,-1,"error",{});
         }else{
-            data.title = "观麦科技-联系我们";
-	        data.gm_active = "contact_us";
-            data.detail= rows[0]
-            res.render('src/contact_us',data)
+            res.render('src/contact_us',{title:'观麦科技-联系我们',gm_active:'contact_us',listData:rows[0]});
+            // data.title = "观麦科技-联系我们";
+	        // data.gm_active = "contact_us";
+            // data.detail= rows[0]
+            // res.render('src/contact_us',data)
         }
     });	
 });
@@ -287,7 +288,6 @@ app.get('/retail',function (req, res) {
 //课程中心
 app.get('/class-center',function (req, res) {
 	data.title = "观麦科技-课程中心";
-    // console.log(req.query);
     let get = req.query
     let limit = get.limit ? get.limit : '24'
     let page = get.page ? get.page : '1'
@@ -298,7 +298,6 @@ app.get('/class-center',function (req, res) {
 
     sql += where +" order by create_time desc " +getlimit(page,limit)
     sql2 += where
-    console.log(sql);
     db.query(sql2,function(err,rows2,fields){ 
         if(err){
             http.send(res,-1,"error",{});
@@ -322,7 +321,6 @@ app.get('/class-center',function (req, res) {
 
 app.get('/class-center-vip',function (req, res) {
 	data.title = "观麦科技-课程中心";
-    // console.log(req.query);
     let get = req.query
     let limit = get.limit ? get.limit : '24'
     let page = get.page ? get.page : '1'
@@ -333,7 +331,6 @@ app.get('/class-center-vip',function (req, res) {
 
     sql += where + " order by create_time desc " +getlimit(page,limit)
     sql2 += where
-    console.log(sql);
     db.query(sql2,function(err,rows2,fields){ 
         if(err){
             http.send(res,-1,"error",{});
@@ -403,7 +400,6 @@ function getlimit(page,pagesize){
 
 function getTableName(apitype){
 
-	console.log(apitype)
 
 	let tableDic = [
 		{key:'news',tableName:'gmcms_artical'},
@@ -436,7 +432,6 @@ app.post('/editArtical', function(req, res, next){
 	let desc = post.desc ? post.desc : ''; 
 	let image = post.image ? post.image : ''; 
     image = base64ToImg(image,createRandomId());
-    console.log(image);
 	let content = post.content ? post.content : ''; 
 	let link = post.link ? post.link : ''; 
 	let pv = post.pv ? post.pv : 0; 
@@ -445,7 +440,6 @@ app.post('/editArtical', function(req, res, next){
 
 	let apitype = post.apitype ? post.apitype : 'news'; 
 	let tableName =  getTableName(apitype)
-	// console.log("tableName"+tableName)
 
 	
 	let sql = "";	
@@ -475,7 +469,6 @@ app.post('/editArtical', function(req, res, next){
         }
 		
 	}
-	console.log(sql);
 	db.query(sql,function(err,rows,fields){ 
 		if(err){
 			http.send(res,-1,"error",{});
@@ -512,7 +505,6 @@ app.post('/delMessage', function(req, res, next){
 	let tabinfo = post.tabinfo; 
 
 	let sql = "delete  from "+tabinfo+" where id = '"+id+"' ";
-    console.log(sql)
 	db.query(sql,function(err,rows,fields){ 
 		if(err){
 			http.send(res,-1,"error",{});
@@ -530,7 +522,6 @@ app.post('/editMessage', function(req, res, next){
 	let tabinfo = post.tabinfo; 
 
 	let sql = "update  "+tabinfo+" set status=1 where id = '"+id+"' ";
-    console.log(sql)
 	db.query(sql,function(err,rows,fields){ 
 		if(err){
 			http.send(res,-1,"error",{});
@@ -551,7 +542,6 @@ app.post('/getArtical', function(req, res, next){
         let page = post.page ? post.page : '1'; 
         let apitype = post.apitype ? post.apitype : 'news'; 
 		let tableName =  getTableName(apitype)
-		console.log(tableName)
         let where = " where 1"
 		let sql = "select  * from "+tableName;
         let sql2 ="select  count(*) as total from "+tableName
@@ -731,7 +721,6 @@ app.get('/postInfo',function (req, res) {
     let company = post.company ;
     sql =  "insert into  gmcms_userinfo (`name`,`phone`,`company`,`add_time`)";
 	sql += " values('"+name+"','"+phone+"','"+company+"','"+getnow()+"');"; 
-    console.log(sql);
 	db.query(sql,function(err,rows,fields){ 
 		if(err){
 			http.send(res,-1,"error",{});
@@ -750,7 +739,6 @@ app.get('/postCommit',function (req, res) {
     let content = post.content ;
     sql =  "insert into  gmcms_comment (`aid`,`nickname`,`content`,`add_time`)";
 	sql += " values('"+aid+"','"+nickname+"','"+content+"','"+getnow()+"');"; 
-    console.log(sql);
 	db.query(sql,function(err,rows,fields){ 
 		if(err){
 			http.send(res,-1,"error",{});
@@ -842,7 +830,6 @@ function base64ToImg(imgData,imgName){
         } 
         return url2;
     })
-    console.log(url2);
     return url2;
 }
 

@@ -87,6 +87,18 @@
   padding: 0;
   justify-content: space-between;
 }
+#deliveryMubiao ul li:nth-child(1){
+  background: url("../gm-images/delivery/实现目标1.png") 152px 87px no-repeat;
+}
+#deliveryMubiao ul li:nth-child(2){
+  background: url("../gm-images/delivery/实现目标2.png") 146px 78px no-repeat;
+}
+#deliveryMubiao ul li:nth-child(3){
+  background: url("../gm-images/delivery/实现目标3.png") 143px 80px no-repeat;
+}
+#deliveryMubiao ul li:nth-child(4){
+  background: url("../gm-images/delivery/实现目标4.png") 142px 73px no-repeat;
+}
 #deliveryMubiao ul li {
   width: 20%;
   height: 155px;
@@ -95,9 +107,9 @@
   font-weight: 500;
   color: #ffffff;
   padding-left: 14px;
-  background: url("../gm-images/case-detail/header.png") 84px 47px no-repeat;
-  background-color: #3860f4;
+  background-color: #3860f4 !important;
 }
+
 #deliveryMubiao ul li h2 {
   font-size: 32px;
 }
@@ -109,6 +121,7 @@
 #deliveryBule {
   margin-top: 103px;
   background-color: #4f77f6;
+  background: url("../gm-images/delivery/解决方法背景图.png")  no-repeat;
 }
 
 #deliveryBule h2 {

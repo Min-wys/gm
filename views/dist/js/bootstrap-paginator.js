@@ -370,14 +370,14 @@
                 }
             }
 			//新加的
-            var itemCustom = $("<li></li>");//创建一个容器
-            var itemHtml = "<span><input type='text' style='width: 30px;height: 20px;' value='"+this.currentPage+"'/>/"+this.totalPages+"</span>";
-            itemCustom.append(itemHtml);
-            listContainer.append(itemCustom);
-            var itemlast = $("<li></li>");//创建一个‘跳转’的span
-            var itemTz = $("<span>跳转</span>").on("click",null,{type: 'jump'},$.proxy(this.onPageItemJumped, this));//绑定点击事件
-            itemlast.append(itemTz);
-            listContainer.append(itemlast);
+            // var itemCustom = $("<li></li>");//创建一个容器
+            // var itemHtml = "<span><input type='text' style='width: 30px;height: 20px;' value='"+this.currentPage+"'/>/"+this.totalPages+"</span>";
+            // itemCustom.append(itemHtml);
+            // listContainer.append(itemCustom);
+            // var itemlast = $("<li></li>");//创建一个‘跳转’的span
+            // var itemTz = $("<span>跳转</span>").on("click",null,{type: 'jump'},$.proxy(this.onPageItemJumped, this));//绑定点击事件
+            // itemlast.append(itemTz);
+            // listContainer.append(itemlast);
         },
 
         /**

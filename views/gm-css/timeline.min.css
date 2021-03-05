@@ -49,11 +49,11 @@
 .timeline:before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 27px;
   left: 0;
   bottom: 0;
   width: 50%;
-  height: 100% !important;
+  height: 70% !important;
   margin-left: 1px;
   border-right-width: 2px;
   border-right-color: #E1E5F0;
@@ -145,7 +145,7 @@
   float: left;
   clear: left;
   width: 50%;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .timeline .timeline-item.timeline-item-right > .timeline-event,
 .timeline

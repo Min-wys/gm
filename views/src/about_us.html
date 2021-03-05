@@ -1,197 +1,204 @@
 <%- include('../common/header.html'); %>
-    <link href="../gm-css/information.css" rel="stylesheet">
-    <link href="../gm-css/timeline.min.css" rel="stylesheet">
-    <link href="../gm-css/quill.snow.css" rel="stylesheet">
-<body style="background-color: #fff;">
+<link href="../gm-css/information.css" rel="stylesheet" />
+<link href="../gm-css/timeline.min.css" rel="stylesheet" />
+<link href="../gm-css/quill.snow.css" rel="stylesheet" />
+<link href="../gm-css/about_us.css" rel="stylesheet" />
+<body style="background-color: #fff">
+  <!-- 导航 -->
+  <%- include('../common/nav.html'); %>
 
-   <!-- 导航 -->
-    <%- include('../common/nav.html'); %>
-
-
-    <!-- Carousel
+  <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <!--       <ol class="carousel-indicators">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!--       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       
       </ol> -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-
-                <div class="container container-gm">
-                    <div class="col-md-10 col-md-offset-2">
-                        <img class="featurette-image  " src="../gm-images/us/us.png">
-                    </div>
-                </div>
-            </div>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container container-gm">
+          <div class="col-md-10 col-md-offset-2">
+            <img class="featurette-image" src="../gm-images/us/us.png" />
+          </div>
         </div>
-
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container information">
-        <div class="row">
-            <div class="col-md-2" role="complementary">
-                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
-                    <ul class="nav bs-docs-sidenav menulist">
-                        <li class="active">
-                            <a href="/about_us">企业介绍</a>
-                        </li>
-                        <li class="">
-                            <a href="/contact_us">联系我们</a>
-                        </li>
-                        <li class="">
-                            <a href="/certificate">荣誉证书</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-md-10 " role="main" id="information_content">
-                <ul class="breadcrumb">
-                    <li>企业介绍</li>
-                </ul>
-                <div class="company_page">
-                    <div class="company_detail ql-editor">
-                       <%-detail.company_desc %>
-                    </div>
-
-                    <p class="company_title">企业历程</p>
-                    <div class="timeline">
-                        <div class="container-fluid">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="timeline timeline-line-dotted">
-                                        <div class="timeline-item timeline-lr">
-                                            <div class="timeline-point timeline-point-success">
-                                                <i class="fa fa-money"></i>
-                                            </div>
-                                            <div class="timeline-event">
-                                                <div class="timeline-heading">
-                                                    <h4>2014</h4>
-                                                    <p>8月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>深圳市观麦科技网络有限公司，正式成立</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="timeline-point timeline-point-success">
-                                                <i class="fa fa-money"></i>
-                                            </div>
-                                            <div class="timeline-event">
-                                                <div class="timeline-heading">
-                                                    <h4>2015</h4>
-                                                    <p>11月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>观麦科技A轮融资8000万人民币</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item timeline-lr">
-                                            <div class="timeline-point timeline-point-success">
-                                                <i class="fa fa-money"></i>
-                                            </div>
-                                            <div class="timeline-event">
-                                                <div class="timeline-heading">
-                                                    <h4>2016</h4>
-                                                    <p>1月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>深圳市观麦科技网络有限公司，正式成立</p>
-                                                </div>
-                                                <div class="timeline-heading">
-                                                    <p>10月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>观麦学院正式创立</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="timeline-point timeline-point-success">
-                                                <i class="fa fa-money"></i>
-                                            </div>
-                                            <div class="timeline-event">
-                                                <div class="timeline-heading">
-                                                    <h4>2017</h4>
-                                                    <p>11月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>观麦科技开放供应链金融服务</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item timeline-lr">
-                                            <div class="timeline-point timeline-point-success">
-                                                <i class="fa fa-money"></i>
-                                            </div>
-                                            <div class="timeline-event">
-                                                <div class="timeline-heading">
-                                                    <h4>2018</h4>
-                                                    <p>6月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>观麦SaaS系统成功落地马来西亚</p>
-                                                </div>
-                                                <div class="timeline-heading">
-                                                    <p>8月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>首创中国中央厨房专用版SaaS系统</p>
-                                                </div>
-                                                <div class="timeline-heading">
-                                                    <p>12月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>牵手有赞，实现前店后仓一体化运营</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="timeline-item">
-                                            <div class="timeline-point timeline-point-success">
-                                                <i class="fa fa-times"></i>
-                                            </div>
-                                            <div class="timeline-event">
-                                                <div class="timeline-heading">
-                                                    <p>1月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>累计服务客户2500+家</p>
-                                                </div>
-                                                <div class="timeline-heading">
-                                                    <p>8月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>发布供港专用版</p>
-                                                </div>
-                                                <div class="timeline-heading">
-                                                    <p>9月</p>
-                                                </div>
-                                                <div class="timeline-body">
-                                                    <p>累计服务客户4200+家</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </div>
+  </div>
+  <!-- /.carousel -->
 
-<!--     <div class="col-md-12 isfee">
+  <!-- Marketing messaging and featurettes
+    ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container information">
+    <div class="row">
+      <div class="col-md-2" role="complementary">
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+          <ul class="nav bs-docs-sidenav menulist">
+            <li class="active">
+              <a href="/about_us">公司介绍</a>
+            </li>
+            <li class="">
+              <a href="/contact_us">联系我们</a>
+            </li>
+            <li class="">
+              <a href="/certificate">荣誉证书</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-10" role="main" id="information_content">
+        <ul class="breadcrumb">
+          <li>公司介绍</li>
+        </ul>
+        <div class="company_page company_page_content">
+            <h2 class="company_detail_title">公司介绍</h2>
+          <div class="company_detail ql-editor company_detai_js">
+            观麦科技（深圳市观麦网络科技有限公司）成立于2014年，总部位于深圳市南山区科技园，目前已在北京、上海、杭州、成都设立直营分公司。在2015年6月，首获8000万A轮投资。员工总数200余人，产品研发团队100余人，是中国生鲜SaaS行业领军企业。
+            2016年，观麦通过自身强大的IT能力将旗下子公司小农女2年的配送经验，全部用代码记录下来，不断升级，迭代，建成观麦SaaS服务平台。帮助传统配送企业转型升级，实现电子化、规范化办公，并在最短的时间内提升效率。
+            为满足更多生鲜企业的业务发展需求，2018年8月，观麦上线发布中央厨房专用版SaaS系统，为生鲜加工企业提供SaaS系统服务。同年12月，观麦牵手有赞，实现生鲜前店后仓一体化运作。2019年8月，观麦科技正式发布供港专用版SAAS系统，为供港企业提供更为专业化的管理服务，并完成了与金税、银豹、有赞、金蝶、用友等平台的互通对接。
+            现阶段国内年配送量超1000万的目标企业有10W+，其IT建设极度落后，观麦以地区中大型客户切入，打造市场口碑，已形成一定标杆效应，截止2020年9月份，观麦服务的客户已突破6000家，遍布全球，在北美、东南亚等市场均有客户，系统功能伴随着国际化，也迭代了国外支付、多国语言等功能。
+            现阶段的观麦已经不仅仅是为生鲜行业提供SaaS软件服务，还将努力发展为生鲜配送企业家的智库，真正实现成为生鲜行业的“水和电”的目标，为行业的升级发展做更多贡献。
+          </div>
+
+          <p class="company_title">企业历程</p>
+          <div class="timeline">
+            <div class="container-fluid">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="timeline timeline-line-dotted">
+                    <div class="timeline-item timeline-lr">
+                      <div class="timeline-point timeline-point-success">
+                        <i class="fa fa-money"></i>
+                      </div>
+                      <div class="timeline-event">
+                        <div class="timeline-heading">
+                          <h4>2014</h4>
+                          <p>8月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>深圳市观麦科技网络有限公司，正式成立</p>
+                          <div class="grayBlock"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline-item" style="margin-top: 120px;">
+                      <div class="timeline-point timeline-point-success">
+                        <i class="fa fa-money"></i>
+                      </div>
+                      <div class="timeline-event">
+                        <div class="timeline-heading">
+                          <h4>2015</h4>
+                          <p>11月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>观麦科技A轮融资8000万人民币</p>
+                          <div class="grayBlock"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline-item timeline-lr">
+                      <div class="timeline-point timeline-point-success">
+                        <i class="fa fa-money"></i>
+                      </div>
+                      <div class="timeline-event">
+                        <div class="timeline-heading">
+                          <h4>2016</h4>
+                          <p>1月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>深圳市观麦科技网络有限公司，正式成立</p>
+                        </div>
+                        <div class="timeline-heading">
+                          <p>10月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>观麦学院正式创立</p>
+                          <div class="grayBlock"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline-item" style="margin-bottom: 80px;">
+                      <div class="timeline-point timeline-point-success">
+                        <i class="fa fa-money"></i>
+                      </div>
+                      <div class="timeline-event">
+                        <div class="timeline-heading">
+                          <h4>2017</h4>
+                          <p>11月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>观麦科技开放供应链金融服务</p>
+                          <div class="grayBlock"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline-item timeline-lr">
+                      <div class="timeline-point timeline-point-success">
+                        <i class="fa fa-money"></i>
+                      </div>
+                      <div class="timeline-event">
+                        <div class="timeline-heading">
+                          <h4>2018</h4>
+                          <p>6月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>观麦SaaS系统成功落地马来西亚</p>
+                        </div>
+                        <div class="timeline-heading">
+                          <p>8月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>首创中国中央厨房专用版SaaS系统</p>
+                        </div>
+                        <div class="timeline-heading">
+                          <p>12月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>牵手有赞，实现前店后仓一体化运营</p>
+                          <div class="grayBlock grayBlockLast"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-point timeline-point-success">
+                        <i class="fa fa-times"></i>
+                      </div>
+                      <div class="timeline-event">
+                        <div class="timeline-heading">
+                          <p>1月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>累计服务客户2500+家</p>
+                        </div>
+                        <div class="timeline-heading">
+                          <p>8月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>发布供港专用版</p>
+                        </div>
+                        <div class="timeline-heading">
+                          <p>9月</p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>累计服务客户4200+家</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--     <div class="col-md-12 isfee">
         <img src="../gm-images/information/isfee.png" alt="" width="100%">
     </div> -->
-    
-<%- include('../common/footer.html'); %>
+
+  <%- include('../common/footer.html'); %>
+</body>

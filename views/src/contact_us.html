@@ -1,97 +1,181 @@
 <%- include('../common/header.html'); %>
-    <link href="../gm-css/information.css" rel="stylesheet">
+<link href="../gm-css/information.css" rel="stylesheet" />
 <body>
+  <!-- 导航 -->
+  <%- include('../common/nav.html'); %>
 
-   <!-- 导航 -->
-    <%- include('../common/nav.html'); %>
-
-
-    <!-- Carousel
+  <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <!--       <ol class="carousel-indicators">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!--       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       
       </ol> -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-
-                <div class="container container-gm">
-                    <div class="col-md-10 col-md-offset-2">
-                        <img class="featurette-image  " src="../gm-images/us/us.png">
-                    </div>
-                </div>
-            </div>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container container-gm">
+          <div class="col-md-10 col-md-offset-2">
+            <img class="featurette-image" src="../gm-images/us/us.png" />
+          </div>
         </div>
-
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container information">
-        <div class="row">
-            <div class="col-md-2" role="complementary">
-                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
-                    <ul class="nav bs-docs-sidenav menulist">
-                        <li class="">
-                            <a href="/about_us">企业介绍</a>
-                        </li>
-                        <li class="active">
-                            <a href="/contact_us">联系我们</a>
-                        </li>
-                        <li class="">
-                            <a href="/certificate">荣誉证书</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-md-10 " role="main" id="information_content">
-                <ul class="breadcrumb">
-                    <li >联系我们</li>
-                </ul>
-                <div class="contact_us">
-                    <div class="company_info">
-                        <div class="item_info">
-                            <p><img src="../gm-images/us/ej.png" alt="">全国服务热线</p>
-                            <a href="tel:400-860-0906" class="basic_info"><%=detail.company_phone%></a>
-                        </div>
-                        <div class="item_info">
-                            <p><img src="../gm-images/us/timer.png" alt="">服务时间</p>
-                            <p class="basic_info"><%=detail.service_time%></p>
-                        </div>
-
-                        <div class="item_info item_info_row">
-                            <p><img src="../gm-images/us/address.png" alt="">公司地址</p>
-                            <p  class="basic_info"><%=detail.address%></p>
-                        </div>
-                        <div class="item_info item_info_row">
-                            <p><img src="../gm-images/us/qywz.png" alt="">企业网站</p>
-                            <p class="basic_info"><%=detail.website%></p>
-                        </div>
-                    </div>
-                    <div class="item_info us_qrcode">
-                         <p><img src="../gm-images/us/gywm.png" alt="">关于我们</p>
-                         <p class="sm_info">扫描下方的二维码<br />关注公众号</p>
-                         <img src="<%=detail.qrcode %>" alt="">
-                    </div>
-                    <div class="us_line"></div>
-                    <!-- 地图 -->
-                    <div class="map item_info item_info_row">
-                        <p><img src="../gm-images/us/dz.png" alt="">观麦科技（深圳市观麦网络科技有限公司）地址</p>
-                        <div class="map_img">
-                            <img src="<%=detail.map_image%>" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    
-<!--     <div class="col-md-12 isfee">
-        <img src="../gm-images/information/isfee.png" alt="" width="100%">
-    </div> -->
-<%- include('../common/footer.html'); %>
+  </div>
+  <!-- /.carousel -->
+
+  <!-- Marketing messaging and featurettes
+    ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container information">
+    <div class="row">
+      <div class="col-md-2" role="complementary">
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+          <ul class="nav bs-docs-sidenav menulist">
+            <li class="">
+              <a href="/about_us">企业介绍</a>
+            </li>
+            <li class="active">
+              <a href="/contact_us">联系我们</a>
+            </li>
+            <li class="">
+              <a href="/certificate">荣誉证书</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-10" role="main" id="information_content">
+        <ul class="breadcrumb">
+          <li>联系我们</li>
+        </ul>
+        <div class="contact_us">
+          <div class="company_info">
+            <div class="item_info">
+              <p><img src="../gm-images/us/ej.png" alt="" />全国服务热线</p>
+              <a href="tel:400-860-0906" class="basic_info">400-860-0906</a>
+            </div>
+            <div class="item_info">
+              <p><img src="../gm-images/us/timer.png" alt="" />服务时间</p>
+              <p class="basic_info">周一至周日 9:00 - 18:00</p>
+            </div>
+
+            <div class="item_info item_info_row">
+              <p><img src="../gm-images/us/address.png" alt="" />公司地址</p>
+              <p class="basic_info">深圳市南山区高新中一道科兴科学园B3座14层</p>
+            </div>
+            <div class="item_info item_info_row">
+              <p>
+                <img
+                  src="../gm-images/us/Snipaste_2021-03-04_19-33-51.png"
+                  alt=""
+                />企业网站
+              </p>
+              <p class="basic_info">www.guanmai.cn</p>
+            </div>
+          </div>
+          <div class="item_info us_qrcode">
+            <p><img src="../gm-images/us/gywm.png" alt="" />关于我们</p>
+            <p class="sm_info">扫描下方的二维码<br />关注公众号</p>
+            <img src="../gm-images/qrcode.png" alt="" class="us_qrcode_img" />
+            <!-- <img src="../gm-images/1.jpeg" alt=""> -->
+          </div>
+          <div class="us_line"></div>
+          <!-- 地图 -->
+          <div class="map item_info item_info_row">
+            <p>
+              <img
+                src="../gm-images/us/address.png"
+                alt=""
+              />观麦科技（深圳市观麦网络科技有限公司）地址
+            </p>
+            <div class="map_img">
+              <!-- <img src="../gm-images/图标1（左到右）.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-10">
+        <div class="dituOuter">
+          <div
+            style="
+              width: 697px;
+              height: 550px;
+              border: #ccc solid 1px;
+              margin: 0 auto;
+              position: relative;
+            "
+            id="dituContent"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 isfee">
+    <img src="../gm-images/information/isfee.png" alt="" width="100%" />
+  </div>
+  <script
+    type="text/javascript"
+    src="http://api.map.baidu.com/api?v=10.0&ak=2337624829697af4d7d4884ea113c174"
+  ></script>
+
+  <script>
+    //创建和初始化地图函数：
+    function initMap() {
+      createMap(); //创建地图
+      setMapEvent(); //设置地图事件
+      addMapControl(); //向地图添加控件
+      createIcon();
+    }
+
+    //创建地图函数：
+    function createMap() {
+      var map = new BMap.Map("dituContent"); //在百度地图容器中创建一个地图
+      var point = new BMap.Point(113.951249, 22.554263); //定义一个中心点坐标
+      map.centerAndZoom(point, 17); //设定地图的中心点和坐标并将地图显示在地图容器中
+      window.map = map; //将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+      map.enableDragging(); //启用地图拖拽事件，默认启用(可不写)
+      map.enableScrollWheelZoom(); //启用地图滚轮放大缩小
+      map.enableDoubleClickZoom(); //启用鼠标双击放大，默认启用(可不写)
+      map.enableKeyboard(); //启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+      //向地图中添加缩放控件
+      var ctrl_nav = new BMap.NavigationControl({
+        anchor: BMAP_ANCHOR_TOP_LEFT,
+        type: BMAP_NAVIGATION_CONTROL_LARGE,
+      });
+      map.addControl(ctrl_nav);
+      //向地图中添加缩略图控件
+      var ctrl_ove = new BMap.OverviewMapControl({
+        anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+        isOpen: 1,
+      });
+      map.addControl(ctrl_ove);
+      //向地图中添加比例尺控件
+      var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+      map.addControl(ctrl_sca);
+    }
+    function createIcon(json) {
+      var icon = new BMap.Icon(
+        "http://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.pn",
+        new BMap.Point(113.951249, 22.554263)
+      );
+      return icon;
+    }
+    initMap(); //创建和初始化地图
+  </script>
+  <%- include('../common/footer.html'); %>
+</body>
