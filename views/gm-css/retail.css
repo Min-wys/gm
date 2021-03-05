@@ -217,3 +217,11 @@ ul{
   background-color: #105cfb;
   color: #fff;
 }
+.resolveOuter{
+  margin-bottom: 40px;
+}
+.resolveOuter img{
+display: block;
+width: 70%;
+margin: 0 auto;
+}

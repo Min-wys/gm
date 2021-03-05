@@ -39,3 +39,27 @@
 .grayBlockLast{
     height: 76px;
 }
+.honorImgOuter{
+  padding: 20px 40px 30px 40px;
+}
+.honorImgOuter h4{
+  font-size: 34px;
+	font-weight: normal;
+  color: #374567;
+  margin: 20px auto;
+  text-align: center;
+}
+.honorImg{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.honorImg img{
+  display: inline-block;
+  width: 27%;
+  margin-bottom: 20px;
+  height: 300px;
+
+}
+

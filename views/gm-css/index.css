@@ -120,8 +120,12 @@
   font-weight: 400;
   margin-bottom: 18px;
 }
-.rigit-title-18 {
-  font-size: 18px;
+.rigit-title-22 {
+  font-size: 22px;
+  /* margin-top: 20px; */
+}
+.rigit-title-15 {
+  font-size: 15px;
   margin-top: 20px;
 }
 .right-tips {
@@ -221,14 +225,17 @@
 */
 .gm-screen {
   width: 100%;
+  height: 558px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 33px;
+  position: relative;
 }
 
 .gm-s-item {
   width: 25%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,23 +246,35 @@
 }
 
 .border-left {
-  border-left: 1px solid #f1f0f0;
+  border-left: 2px solid #f1f0f0;
 }
 .border-right {
-  border-right: 1px solid #f1f0f0;
+  border-right: 2px solid #f1f0f0;
 }
 .border-top {
-  border-top: 1px solid #f1f0f0;
+  border-top: 2px solid #f1f0f0;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #f1f0f0;
+  border-bottom: 2px solid #f1f0f0;
 }
-
-.gm-s-item:hover {
-  background: #ffffff;
+.border-bottom2 {
+  border-bottom: 2px solid #fff;
+}
+.gm-screen-mask{
+  width: 25%;
+  height: 50%;
   box-shadow: 0px 3px 8px 0px #e4e6f2;
   border-bottom: 2px solid #3860f4;
+  position:absolute;
+  /* top: 0;
+  left: 0; */
+  display: none;
+}
+.gm-s-item:hover {
+  /* background: #ffffff;
+  box-shadow: 0px 3px 8px 0px #e4e6f2;
+  border-bottom: 2px solid #3860f4; */
 }
 .gs-active {
   background: #ffffff;
@@ -263,8 +282,8 @@
   border-bottom: 2px solid #3860f4;
 }
 .screen-icon {
-  width: 40px;
-  margin-bottom: 10px;
+  width: 45px;
+  margin-bottom: 20px;
 }
 
 .gm-s-item .right-text {
@@ -710,8 +729,51 @@
   justify-content: center;
   align-items: center;
 }
-.superiorityCenter {
+.topBottomCenterimg2{
+  position: absolute;
+  z-index: 1;
 }
+.topBottomCenterimg1{
+  position: absolute;
+  z-index: 2;
+}
+
+/* .topBottomCenterimg1{
+
+} */
+.topBottomCenterimg2{
+  transform: rotateY(0deg);
+} 
+
+.topBottomCenterImg:hover .topBottomCenterimg2{
+  animation: rotateChange2 1s linear both;
+}
+.topBottomCenterImg:hover .topBottomCenterimg1{
+  animation: rotateChange 1s linear both;
+}
+ 
+@keyframes rotateChange{
+  from {
+    /* width: 100%; */
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+}
+@keyframes rotateChange2{
+  from {
+    /* width: 100%; */
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+    z-index: 2;
+  }
+}
+
+
 .superiorityCenteImgOuter {
   width: 360px;
   height: 360px;
@@ -986,8 +1048,10 @@
 /* 生鲜推荐 */
 #freshClassBlue {
   width: 100%;
-  height: 110px;
+  height: 87px;
   position: relative;
+  background: url('../gm-images/index/首页-背景图.png');
+  background-size: contain;
   background-color: rgb(30, 79, 223);
 }
 .btn-freshClassBlue {

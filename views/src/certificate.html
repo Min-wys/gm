@@ -1,71 +1,91 @@
 <%- include('../common/header.html'); %>
-    <link href="../gm-css/information.css" rel="stylesheet">
-    <link href="../gm-css/information.css" rel="stylesheet">
-    <link href="../gm-css/timeline.min.css" rel="stylesheet">
-    <link href="../gm-css/quill.snow.css" rel="stylesheet">
+<link href="../gm-css/information.css" rel="stylesheet" />
+<link href="../gm-css/information.css" rel="stylesheet" />
+<link href="../gm-css/timeline.min.css" rel="stylesheet" />
+<link href="../gm-css/quill.snow.css" rel="stylesheet" />
+<link rel="stylesheet" href="../gm-css/about_us.css" />
 <body>
+  <!-- 导航 -->
+  <%- include('../common/nav.html'); %>
 
-    <!-- 导航 -->
-    <%- include('../common/nav.html'); %>
-
-
-    <!-- Carousel
+  <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <!--       <ol class="carousel-indicators">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!--       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       
       </ol> -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-
-                <div class="container container-gm">
-                    <div class="col-md-10 col-md-offset-2">
-                        <img class="featurette-image  " src="../gm-images/us/us.png">
-                    </div>
-                </div>
-            </div>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container container-gm">
+          <div class="col-md-10 col-md-offset-2">
+            <img class="featurette-image" src="../gm-images/us/us.png" />
+          </div>
         </div>
-
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container information">
-        <div class="row">
-            <div class="col-md-2" role="complementary">
-                <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
-                    <ul class="nav bs-docs-sidenav menulist">
-                        <li >
-                            <a href="/about_us">企业介绍</a>
-                        </li>
-                        <li class="">
-                            <a href="/contact_us">联系我们</a>
-                        </li>
-                        <li class="active">
-                            <a href="/certificate">荣誉证书</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="col-md-10 " role="main" id="information_content">
-                <ul class="breadcrumb">
-                    <li><a href="/certificate">荣誉证书</a></li>
-                    <!-- <li class="active">内容</li> -->
-                </ul>
-
-                <div class="certificate_info ql-editor">
-                    <%-detail.honr_image%>
-                </div>
-            </div>
-
-        </div>
+      </div>
     </div>
-<!--     <div class="col-md-12 isfee" >
-        <img src="../gm-images/information/isfee.png" alt="" width="100%">
-    </div> -->
-<%- include('../common/footer.html'); %>
+  </div>
+  <!-- /.carousel -->
+
+  <!-- Marketing messaging and featurettes
+    ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container information">
+    <div class="row">
+      <div class="col-md-2" role="complementary">
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+          <ul class="nav bs-docs-sidenav menulist">
+            <li>
+              <a href="/about_us">企业介绍</a>
+            </li>
+            <li class="">
+              <a href="/contact_us">联系我们</a>
+            </li>
+            <li class="active">
+              <a href="/certificate">荣誉证书</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-10" role="main" id="information_content">
+        <ul class="breadcrumb">
+          <li><a href="/certificate">荣誉证书</a></li>
+          <!-- <li class="active">内容</li> -->
+        </ul>
+
+        <div class="certificate_info ql-editor honorImgOuter">
+          <h4>荣誉资质</h4>
+          <div class="honorImg">
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+          </div>
+          <h4>软著证书</h4>
+          <div class="honorImg">
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+            <img src="../gm-images/1.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 isfee">
+    <img src="../gm-images/information/isfee.png" alt="" width="100%" />
+  </div>
+  <%- include('../common/footer.html'); %>
+</body>

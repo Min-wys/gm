@@ -253,70 +253,70 @@
             <h4 class="featurette-heading-sub featurette-heading" style="margin-top: 68px;">观麦应用场景</h4>
             <p class="lead">生鲜行业解决方案，专属应用，专业赋能</p>
         </div>
-        <div class="gm-screen">
-
+        <div class="gm-screen" id="gm-screen-id">
+            <div class="gm-screen-mask"></div>
             <div class="gm-s-item border-right border-bottom">
                 <img src="../gm-images/index/screen-icon1.png" class="screen-icon wow fadeInLeft">
                 <div class="right-text wow fadeInLeft">
-                    <p class="rigit-title rigit-title-18">订单管理</p>
-                    <p class="right-tips">持续进化提升安全能力</p>
+                    <p class="rigit-title rigit-title-22">订单管理</p>
+                    <p class="right-tips rigit-title-15">持续进化提升安全能力</p>
                 </div>
             </div>
 
             <div class="gm-s-item border-right border-bottom">
                 <img src="../gm-images/index/screen-icon2.png" class="screen-icon wow fadeInDown">
                 <div class="right-text wow fadeInDown ">
-                    <p class="rigit-title rigit-title-18">采购管理</p>
-                    <p class="right-tips">持续进化提升安全能力</p>
+                    <p class="rigit-title rigit-title-22">采购管理</p>
+                    <p class="right-tips rigit-title-15">持续进化提升安全能力</p>
                 </div>
             </div>
 
             <div class="gm-s-item border-right border-bottom">
-                <img src="../gm-images/index/screen-icon3.png" class="screen-icon wow fadeInDown">
+                <img src="../gm-images/index/分拣管理图标.png" class="screen-icon wow fadeInDown">
                 <div class="right-text wow fadeInDown">
-                    <p class="rigit-title rigit-title-18">分拣管理</p>
-                    <p class="right-tips">持续进化提升安全能力</p>
+                    <p class="rigit-title rigit-title-22">分拣管理</p>
+                    <p class="right-tips rigit-title-15">持续进化提升安全能力</p>
                 </div>
             </div>
 
             <div class="gm-s-item border-bottom">
                 <img src="../gm-images/index/screen-icon4.png" class="screen-icon wow fadeInRight">
                 <div class="right-text wow fadeInRight">
-                    <p class="rigit-title rigit-title-18">加工管理</p>
-                    <p class="right-tips">持续进化提升安全能力</p>
+                    <p class="rigit-title rigit-title-22">加工管理</p>
+                    <p class="right-tips rigit-title-15">持续进化提升安全能力</p>
                 </div>
             </div>
 
-            <div class="gm-s-item border-right">
+            <div class="gm-s-item border-right border-bottom2">
                 <img src="../gm-images/index/screen-icon5.png" class="screen-icon wow fadeInLeft">
                 <div class="right-text wow fadeInLeft">
-                    <p class="rigit-title rigit-title-18">配送管理</p>
-                    <p class="right-tips">持续进化提升安全能力</p>
+                    <p class="rigit-title rigit-title-22">配送管理</p>
+                    <p class="right-tips rigit-title-15">持续进化提升安全能力</p>
                 </div>
             </div>
 
-            <div class="gm-s-item border-right">
+            <div class="gm-s-item border-right border-bottom2">
                 <img src="../gm-images/index/screen-icon6.png" class="screen-icon wow fadeInUp">
                 <div class="right-text wow fadeInUp">
-                    <p class="rigit-title rigit-title-18">仓储管理</p>
-                    <p class="right-tips">持续进化提升安全能力</p>
+                    <p class="rigit-title rigit-title-22">仓储管理</p>
+                    <p class="right-tips rigit-title-15">持续进化提升安全能力</p>
                 </div>
             </div>
 
-            <div class="gm-s-item  border-right ">
+            <div class="gm-s-item  border-right border-bottom2">
                 <img src="../gm-images/index/screen-icon7.png" class="screen-icon wow fadeInUp">
                 <div class="right-text wow fadeInUp">
-                    <p class="rigit-title rigit-title-18">对账管理</p>
-                    <p class="right-tips">持续进化提升安全能力</p>
+                    <p class="rigit-title rigit-title-22">对账管理</p>
+                    <p class="right-tips rigit-title-15">持续进化提升安全能力</p>
                 </div>
             </div>
 
 
-            <div class="gm-s-item ">
+            <div class="gm-s-item border-bottom2">
                 <img src="../gm-images/index/screen-icon8.png" class="screen-icon wow fadeInRight">
                 <div class="right-text wow fadeInRight">
-                    <p class="rigit-title rigit-title-18">数据分析</p>
-                    <p class="right-tips">持续进化提升安全能力</p>
+                    <p class="rigit-title rigit-title-22">数据分析</p>
+                    <p class="right-tips rigit-title-15">持续进化提升安全能力</p>
                 </div>
             </div>
 
@@ -429,8 +429,11 @@
             <div class="superiorityCenter topBottomCenter superiorityWidth">
                 <div class="superiorityCenteImgOuter topBottomCenter">
                     <div class="topBottomCenter">
-                        <img src="../gm-images/case-logo.png" alt="">
-                        <img src="../gm-images/index/b-bottom-2.png" alt="">
+                        <div class="topBottomCenterImg">
+                            <img src="../gm-images/index/图2.png" alt="" class="topBottomCenterimg2">
+                            <img src="../gm-images/index/图1.png" alt="" class="topBottomCenterimg1">
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -849,7 +852,170 @@
                 }
             
             }
+            
+            // 观麦应用场景动画
+            $('#gm-screen-id').mouseenter(function(e){
+                let str = e.target.innerText;
+                let gmItemWidth = $('.gm-s-item').width()+2
+                let gmItemHeight = $('#gm-screen-id').height()/2
+                // 当前模块距离外层距离
+                let divWidth = e.target.offsetLeft;
+                let divHeight = e.target.offsetTop;
+                console.log('moveFn1',divWidth,divHeight,e.target)
+                let oMask = document.getElementsByClassName('gm-screen-mask')[0]
+                if(str.includes('订单管理')){
+                    $('.gm-screen-mask').css({'display':'block','top':'0','left':'0'})
+                }
+                if(str.includes('采购管理')){
+                    $('.gm-screen-mask').css({'display':'block','top':'0','left':gmItemWidth})
+                }
+                if(str.includes('分拣管理')){
+                    $('.gm-screen-mask').css({'display':'block','top':'0','left':gmItemWidth*2})
+                }
+                if(str.includes('加工管理')){
+                    $('.gm-screen-mask').css({'display':'block','top':'0','left':gmItemWidth*3})
+                }
+                if(str.includes('配送管理')){
+                    $('.gm-screen-mask').css({'display':'block','top':gmItemHeight,'left':'0'})
+                }
+                if(str.includes('仓储管理')){
+                    $('.gm-screen-mask').css({'display':'block','top':gmItemHeight,'left':gmItemWidth})
+                }
+                if(str.includes('对账管理')){
+                    $('.gm-screen-mask').css({'display':'block','top':gmItemHeight,'left':gmItemWidth*2})
+                }
+                if(str.includes('数据分析')){
+                    $('.gm-screen-mask').css({'display':'block','top':gmItemHeight,'left':gmItemWidth*3})
+                }
+                let timer2 = null;
+                let timer = null;
+                function clear(){
+                    clearInterval(timer2);
+                    clearInterval(timer);
+                }
+                function move1(start,end,div){
+                    console.log('start,end',start,end)
+                    //在每一个两秒内，不让滚动条直接走，而是以动画形式移动
+                    var start = start;//当前滚动条的位置
+                    var end = end;//每次动画的结束位置
+                    var startStep = 0;
+                    var endStep = 20;
+                    var everyStep = (end - start) / (endStep - startStep);//每一步所走的距离
+                    //让滚动条条动画移动
+                    timer2 = setInterval(function () {
+                        startStep ++;//用来判断动画是否执行完毕
+                        if (startStep >= endStep) {
+                            clearInterval(timer2);
+                        }
+                        start += everyStep;
+                        oMask.style.left= Math.round(start) +"px"
+                    },10)
+                }
+                // 节流
+                function move2(start,end,div){
+                    console.log('start,end',start,end)
+                    //在每一个两秒内，不让滚动条直接走，而是以动画形式移动
+                    var start = start;//当前滚动条的位置
+                    var end = end;//每次动画的结束位置
+                    var startStep = 0;
+                    var endStep = 20;
+                    var everyStep = (end - start) / (endStep - startStep);//每一步所走的距离
+                    //让滚动条条动画移动
+                    timer = setInterval(function () {
+                        startStep ++;//用来判断动画是否执行完毕
+                        if (startStep >= endStep) {
+                            clearInterval(timer);
+                        }
+                        start += everyStep;
+                        oMask.style.top= Math.round(start) +"px"
+                    },10)
+                }
+                // 节流
+                function throttle(fn, time) {
+                    let lastTime = 0;
+                    return function () {
+                        //获取当前进入的时间
+                        let nowTime = Date.now();
+                        //进行判断，如果小于就直接返回出去
+                        if (nowTime - lastTime < time) {
+                            return;
+                        }
+                        fn.call(this, arguments[0]);
+                        //把lastTime更新一下 方便下次判断
+                        lastTime = nowTime;
+                    }
+                }
+                function moveFn(e){
+                    
+                    clear()
+                    let str1 = e.target.innerText;
+                    let step = 10;
+                    if(str1.includes('订单管理')){
+                        clear()
+                        move1(divWidth,0)
+                        move2(divHeight,0)
+                        divWidth = 0;
+                        divHeight = 0;
+                    }
+                    if(str1.includes('采购管理')){
+                        clear()
+                        move1(divWidth,gmItemWidth)
+                        move2(divHeight,0)
+                        divWidth = gmItemWidth;
+                        divHeight = 0;
+                    }
+                    if(str1.includes('分拣管理')){
+                        clear()
+                        move1(divWidth,gmItemWidth*2)
+                        move2(divHeight,0)
+                        divWidth = gmItemWidth*2;
+                        divHeight = 0;
+                    }
+                    if(str1.includes('加工管理')){
+                        clear()
+                        move1(divWidth,gmItemWidth*3)
+                        move2(divHeight,0)
+                        divWidth = gmItemWidth*3;
+                        divHeight = 0;
+                    }
+                    if(str1.includes('配送管理')){
+                        clear()
+                        move1(divWidth,0)
+                        move2(divHeight,gmItemHeight)
+                        divWidth = 0;
+                        divHeight = gmItemHeight;
+                    }
+                    if(str1.includes('仓储管理')){
+                        clear()
+                        move1(divWidth,gmItemWidth)
+                        move2(divHeight,gmItemHeight)
+                        divWidth = gmItemWidth;
+                        divHeight = gmItemHeight;
+                    }
+                    if(str1.includes('对账管理')){
+                        clear()
+                        move1(divWidth,gmItemWidth*2)
+                        move2(divHeight,gmItemHeight)
+                        divWidth = gmItemWidth*2;
+                        divHeight = gmItemHeight;
+                    }
+                    if(str1.includes('数据分析')){
+                        clear()
+                        move1(divWidth,gmItemWidth*3)
+                        move2(divHeight,gmItemHeight)
+                        divWidth = gmItemWidth*3;
+                        divHeight = gmItemHeight;
+                    }
+                }
+                // 移动
+                $('#gm-screen-id').mousemove(throttle(moveFn,250))
+            })
+            $('#gm-screen-id').mouseleave(function(){
+                $('.gm-screen-mask').css({'display':'none','top':'0','left':'0'})
+            })
+        
         })
+       
         function up(obj) {
             var item=obj.el;
             var num=obj.max;
