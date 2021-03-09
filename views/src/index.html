@@ -861,7 +861,6 @@
                 // 当前模块距离外层距离
                 let divWidth = e.target.offsetLeft;
                 let divHeight = e.target.offsetTop;
-                console.log('moveFn1',divWidth,divHeight,e.target)
                 let oMask = document.getElementsByClassName('gm-screen-mask')[0]
                 if(str.includes('订单管理')){
                     $('.gm-screen-mask').css({'display':'block','top':'0','left':'0'})
@@ -894,7 +893,6 @@
                     clearInterval(timer);
                 }
                 function move1(start,end,div){
-                    console.log('start,end',start,end)
                     //在每一个两秒内，不让滚动条直接走，而是以动画形式移动
                     var start = start;//当前滚动条的位置
                     var end = end;//每次动画的结束位置
@@ -913,7 +911,6 @@
                 }
                 // 节流
                 function move2(start,end,div){
-                    console.log('start,end',start,end)
                     //在每一个两秒内，不让滚动条直接走，而是以动画形式移动
                     var start = start;//当前滚动条的位置
                     var end = end;//每次动画的结束位置
