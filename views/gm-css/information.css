@@ -303,7 +303,14 @@ body {
 
 /* 资讯详情css */
 #information_content .detail {
-  margin: 30px 0 42px 60px;
+  margin: 30px 45px 42px 45px;
+}
+.messageContent{
+  background-color: #ffffff;
+	border-radius: 2px;
+  border: solid 1px #e1e6f0;
+  padding-right: 30px;
+  margin-left: 3px;
 }
 #information_content .detail .title {
   font-size: 18px;
